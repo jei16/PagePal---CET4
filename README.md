@@ -1,9 +1,11 @@
 COMPANY NAME:
-VolumeUp Inc.
+SynUps PH
 
 GROUP MEMBERS:
+Alam, John Carlo
+Dalangin, Kate Anne Marie
 dela Cruz, Jhon Carlo
-Reyles, Uriel Ryan J.
+Reyles, Uriel Ryan
 
 PROJECT NAME:
 PagePal
