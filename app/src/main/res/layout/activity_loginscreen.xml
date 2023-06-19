@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:context=".getstarted"
+        tools:layout_editor_absoluteX="-98dp">
+
+        <RelativeLayout
+            android:id="@+id/circle_design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-54dp"
+            android:layout_marginEnd="-120dp"
+            android:layout_marginTop="-67dp">
+
+            <View
+                android:id="@+id/design_10"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="155dp"
+                android:background="@drawable/design_shape" />
+
+            <View
+                android:id="@+id/design_9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="375dp"
+                android:layout_marginTop="117dp"
+                android:background="@drawable/design_shape" />
+
+            <ImageView
+                android:id="@+id/design_8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="174dp"
+                android:contentDescription="design_8"
+                android:src="@drawable/design_shape" />
+
+            <View
+                android:id="@+id/design_7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="273dp"
+                android:background="@drawable/design_shape" />
+
+            <View
+                android:id="@+id/design_6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="430dp"
+                android:layout_marginTop="538dp"
+                android:background="@drawable/design_shape" />
+
+            <View
+                android:id="@+id/design_5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="655dp"
+                android:background="@drawable/design_shape" />
+
+            <View
+                android:id="@+id/design_4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="380dp"
+                android:layout_marginTop="331dp"
+                android:background="@drawable/design_shape" />
+
+            <View
+                android:id="@+id/design_3"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="360dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/design_shape" />
+
+            <View
+                android:id="@+id/design_2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="647dp"
+                android:background="@drawable/design_shape" />
+
+            <View
+                android:id="@+id/design_1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="420dp"
+                android:layout_marginTop="288dp"
+                android:background="@drawable/design_shape" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout android:id="@+id/username_group"
+            android:layout_marginTop="326dp"
+            android:layout_marginStart="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <View   android:id="@+id/username_textbox"
+                android:background="@drawable/username_textbox"
+                android:alpha="0.23999999463558"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="300dp"
+                android:layout_height="60dp" />
+
+            <TextView android:id="@+id/username_text"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="21dp"
+                android:layout_width="79dp"
+                android:layout_height="26dp"
+                android:text="Username"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/password_group"
+            android:layout_marginTop="406dp"
+            android:layout_marginStart="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <View   android:id="@+id/password_textbox"
+                android:background="@drawable/username_textbox"
+                android:alpha="0.23999999463558"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="300dp"
+                android:layout_height="60dp" />
+
+            <TextView android:id="@+id/password_text"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="21dp"
+                android:layout_width="75dp"
+                android:layout_height="26dp"
+                android:text="Password"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout android:id="@+id/login_button_group"
+            android:layout_marginTop="486dp"
+            android:layout_marginStart="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <View   android:id="@+id/login_button"
+                android:background="@drawable/username_textbox"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="300dp"
+                android:layout_height="60dp" />
+
+            <TextView android:id="@+id/login"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/login_color"
+                android:layout_marginLeft="132dp"
+                android:layout_marginTop="21dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:text="Login"
+                />
+
+        </RelativeLayout>
+
+        <TextView android:id="@+id/forgot_password_text"
+            android:textColor="@color/white"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="554dp"
+            android:layout_width="115dp"
+            android:layout_height="20dp"
+            android:text="Forgot Password"
+            />
+
+        <TextView android:id="@+id/welcome_text"
+            android:textSize="12.7sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="168dp"
+            android:layout_marginTop="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="85dp"
+            android:layout_height="25.349999904633dp"
+            android:text="W E L C O M E"
+            />
+
+        <TextView android:id="@+id/sign_up_text"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="end"
+            android:textColor="@color/white"
+            android:layout_marginLeft="297dp"
+            android:layout_marginTop="554dp"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="Sign Up"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/pagepal_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="124dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/pagepal_text_login"
+                android:layout_width="206.29999923706dp"
+                android:layout_height="85.299999237061dp"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="108dp"
+                android:text="Pal"
+                android:textColor="@color/black"
+                android:textSize="38.6sp"
+                android:textStyle="bold"
+
+                />
+
+            <ImageView
+                android:id="@+id/pagepal_logo_login"
+                android:layout_width="110dp"
+                android:layout_height="111.57dp"
+                android:layout_marginStart="27dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:contentDescription="pagepal_logo_login"
+                android:src="@drawable/pagepal_logo_login" />
+
+            <TextView
+                android:id="@+id/pagepal_text2_login"
+                android:layout_width="206.29999923706dp"
+                android:layout_height="85.299999237061dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="108dp"
+                android:layout_centerHorizontal="true"
+                android:text="Page"
+                android:textColor="@color/white"
+                android:textSize="38.6sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

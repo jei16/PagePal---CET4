@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#b79aff</color>
     <color name="gray">#EAECEE</color>
+
+    <color name="login_color">#7B13C3</color>
+    <color name="design_color">#DDCFFF</color>
+
 </resources>
