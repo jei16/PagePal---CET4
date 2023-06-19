@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".getstarted"
+    android:background="@color/purple">
+
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/img_feature3" />
+
+    <TextView
+        android:id="@+id/first_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-70dp"
+        android:text="Connect with"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/second_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_text"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-10dp"
+        android:text="other bookworms!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+
+    <TextView
+        android:id="@+id/desc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_text"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="6dp"
+        android:text="Share your passion for books and engage"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc_text"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:text=" in enriching discussions."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:backgroundTint="@color/purple_200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="80dp"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="560dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/nextbutton"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dot_loading" />
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/nextbutton"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dot_loading" />
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/nextbutton"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dot_loading" />
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/nextbutton"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dot_loading"
+        />
+
+
+</RelativeLayout>
