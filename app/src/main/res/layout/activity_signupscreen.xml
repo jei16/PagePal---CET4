@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:context=".getstarted"
+        tools:layout_editor_absoluteX="-98dp">
+
+        <RelativeLayout
+            android:id="@+id/circle_design"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="-54dp"
+            android:layout_marginTop="-67dp"
+            android:layout_marginEnd="-120dp">
+
+            <View
+                android:id="@+id/design_10"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="155dp"
+                android:background="@drawable/design_shape_signup" />
+
+            <View
+                android:id="@+id/design_9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="375dp"
+                android:layout_marginTop="117dp"
+                android:background="@drawable/design_shape_signup" />
+
+            <ImageView
+                android:id="@+id/design_8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="174dp"
+                android:contentDescription="design_8"
+                android:src="@drawable/design_shape_signup" />
+
+            <View
+                android:id="@+id/design_7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="273dp"
+                android:background="@drawable/design_shape_signup" />
+
+            <View
+                android:id="@+id/design_6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="430dp"
+                android:layout_marginTop="538dp"
+                android:background="@drawable/design_shape_signup" />
+
+            <View
+                android:id="@+id/design_5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="655dp"
+                android:background="@drawable/design_shape_signup" />
+
+            <View
+                android:id="@+id/design_4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="380dp"
+                android:layout_marginTop="295dp"
+                android:background="@drawable/design_shape_signup" />
+
+            <View
+                android:id="@+id/design_3"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginStart="400dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/design_shape_signup" />
+
+            <View
+                android:id="@+id/design_2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="647dp"
+                android:background="@drawable/design_shape_signup" />
+
+            <View
+                android:id="@+id/design_1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="420dp"
+                android:layout_marginTop="230dp"
+                android:background="@drawable/design_shape_signup" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/pagepal_text_signup"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="110dp"
+            android:layout_centerHorizontal="true"
+            android:text="PagePal"
+            android:textColor="@color/design_color_signup_text"
+            android:textSize="24.6sp"
+            android:textStyle="bold"
+
+            />
+
+        <ImageView
+            android:id="@+id/pagepal_logo_signup"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="pagepal_logo_signup"
+            android:src="@drawable/pagepal_logo_signup" />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/username_tbox_signup_group"
+    android:layout_marginTop="315dp"
+    android:layout_marginStart="55dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name_editText"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="Name"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:inputType="text" />
+
+        <View   android:id="@+id/name_textbox_signup"
+            android:background="@drawable/signup_textbox"
+            android:alpha="0.15"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/email_tbox_signup_group"
+        android:layout_marginTop="375dp"
+        android:layout_marginStart="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/email_editText"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="Email Address"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:inputType="text" />
+
+        <View   android:id="@+id/email_textbox_signup"
+            android:background="@drawable/signup_textbox"
+            android:alpha="0.15"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
