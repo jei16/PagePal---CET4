@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_pagepal_logo_login.png.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/pagepal_logo_login.png"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_dot_loading.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/dot_loading.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/layout_activity_getstarted3.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/layout/activity_getstarted3.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/layout_activity_getstarted.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/layout/activity_getstarted.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_username_textbox.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/username_textbox.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_img_feature3.png.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/img_feature3.png"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_img_feature1.png.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/img_feature1.png"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/layout_activity_splashscreen.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/layout/activity_splashscreen.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/layout_activity_getstarted4.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/layout/activity_getstarted4.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/layout_activity_loginscreen.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/layout/activity_loginscreen.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/layout_activity_getstarted2.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/layout/activity_getstarted2.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/xml_backup_rules.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_img_feature4.png.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/img_feature4.png"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/layout_layout.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/layout/layout.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_design_shape.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/design_shape.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pagepal.app-main-64:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_img_feature2.png.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/img_feature2.png"
+    },
+    {
+        "merged": "com.example.pagepal.app-merged_res-62:/drawable_pagepal_logo.png.flat",
+        "source": "com.example.pagepal.app-main-64:/drawable/pagepal_logo.png"
+    }
+]

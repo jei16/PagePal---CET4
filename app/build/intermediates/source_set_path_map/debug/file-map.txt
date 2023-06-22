@@ -1,0 +1,64 @@
+com.example.pagepal.app-ui-util-1.3.0-0 C:\Users\Xayori\.gradle\caches\transforms-3\014b3a9449a43553ba488326ea5d23f0\transformed\ui-util-1.3.0\res
+com.example.pagepal.app-core-runtime-2.2.0-1 C:\Users\Xayori\.gradle\caches\transforms-3\01d2c3bba73683db1e3d044dc631c425\transformed\core-runtime-2.2.0\res
+com.example.pagepal.app-annotation-experimental-1.3.0-2 C:\Users\Xayori\.gradle\caches\transforms-3\03c3df6d998a07cdf53d46ab45c3a86b\transformed\annotation-experimental-1.3.0\res
+com.example.pagepal.app-startup-runtime-1.1.1-3 C:\Users\Xayori\.gradle\caches\transforms-3\06028a9ad07c7263825ab5961ba14159\transformed\startup-runtime-1.1.1\res
+com.example.pagepal.app-recyclerview-1.1.0-4 C:\Users\Xayori\.gradle\caches\transforms-3\0ae7eb7b47bd8685f8ee68376e48d4e6\transformed\recyclerview-1.1.0\res
+com.example.pagepal.app-material-1.3.0-5 C:\Users\Xayori\.gradle\caches\transforms-3\103d88f1cbd4699b712751d45f8564de\transformed\material-1.3.0\res
+com.example.pagepal.app-customview-poolingcontainer-1.0.0-6 C:\Users\Xayori\.gradle\caches\transforms-3\11b1edb6b254efa34235b8bf20d8fd24\transformed\customview-poolingcontainer-1.0.0\res
+com.example.pagepal.app-activity-1.7.2-7 C:\Users\Xayori\.gradle\caches\transforms-3\11eb7536712f453265a78db0e656437d\transformed\activity-1.7.2\res
+com.example.pagepal.app-constraintlayout-2.1.4-8 C:\Users\Xayori\.gradle\caches\transforms-3\157b0d0421bff13dfc8d09b97e6c46f0\transformed\constraintlayout-2.1.4\res
+com.example.pagepal.app-activity-compose-1.7.2-9 C:\Users\Xayori\.gradle\caches\transforms-3\196d2489bb583c761b84ad12d9cbc8e1\transformed\activity-compose-1.7.2\res
+com.example.pagepal.app-material-icons-core-1.3.0-10 C:\Users\Xayori\.gradle\caches\transforms-3\1eef9e2d909aa7b18a555eb1e5e75703\transformed\material-icons-core-1.3.0\res
+com.example.pagepal.app-coordinatorlayout-1.1.0-11 C:\Users\Xayori\.gradle\caches\transforms-3\2069e7c236f47d606f08b03cb3b1a5be\transformed\coordinatorlayout-1.1.0\res
+com.example.pagepal.app-lifecycle-livedata-2.6.1-12 C:\Users\Xayori\.gradle\caches\transforms-3\226f3d728d88f183dcd7a52b9962b097\transformed\lifecycle-livedata-2.6.1\res
+com.example.pagepal.app-ui-text-1.3.0-13 C:\Users\Xayori\.gradle\caches\transforms-3\24b11eb78dc2e0198876c2cea64518f3\transformed\ui-text-1.3.0\res
+com.example.pagepal.app-savedstate-1.2.1-14 C:\Users\Xayori\.gradle\caches\transforms-3\272eeb88ee1e2cc57281ed9688d5825a\transformed\savedstate-1.2.1\res
+com.example.pagepal.app-lifecycle-process-2.6.1-15 C:\Users\Xayori\.gradle\caches\transforms-3\2e257641e743b3724e77da995ea2958f\transformed\lifecycle-process-2.6.1\res
+com.example.pagepal.app-core-ktx-1.10.1-16 C:\Users\Xayori\.gradle\caches\transforms-3\2e395b5228c52edce3b37b85c40330e5\transformed\core-ktx-1.10.1\res
+com.example.pagepal.app-play-services-base-18.0.1-17 C:\Users\Xayori\.gradle\caches\transforms-3\311d5e7d5ef2bb620039dfb090f7f57a\transformed\play-services-base-18.0.1\res
+com.example.pagepal.app-play-services-basement-18.1.0-18 C:\Users\Xayori\.gradle\caches\transforms-3\31958457df3d13c68e543884ad8f7dc8\transformed\play-services-basement-18.1.0\res
+com.example.pagepal.app-foundation-layout-1.3.0-19 C:\Users\Xayori\.gradle\caches\transforms-3\329e0107cb5c982cd10cd6689709e1c7\transformed\foundation-layout-1.3.0\res
+com.example.pagepal.app-animation-core-1.3.0-20 C:\Users\Xayori\.gradle\caches\transforms-3\35934044efda09beb444dcc7a67bd3d4\transformed\animation-core-1.3.0\res
+com.example.pagepal.app-transition-1.2.0-21 C:\Users\Xayori\.gradle\caches\transforms-3\35ea14bce23b1659c3c803f41d38262a\transformed\transition-1.2.0\res
+com.example.pagepal.app-ui-geometry-1.3.0-22 C:\Users\Xayori\.gradle\caches\transforms-3\35f01dce31fa010f9596357fd4d4432f\transformed\ui-geometry-1.3.0\res
+com.example.pagepal.app-core-1.10.1-23 C:\Users\Xayori\.gradle\caches\transforms-3\37f3e189438d01ee18bf5b60d9e586a0\transformed\core-1.10.1\res
+com.example.pagepal.app-firebase-common-20.3.2-24 C:\Users\Xayori\.gradle\caches\transforms-3\43b71024903546c9a6bb8ebd35cd5049\transformed\firebase-common-20.3.2\res
+com.example.pagepal.app-activity-ktx-1.7.2-25 C:\Users\Xayori\.gradle\caches\transforms-3\45d126dd46caab5db165fd7ab17a7195\transformed\activity-ktx-1.7.2\res
+com.example.pagepal.app-emoji2-views-helper-1.2.0-26 C:\Users\Xayori\.gradle\caches\transforms-3\4f11b1a046cfd9becc489d812130c347\transformed\emoji2-views-helper-1.2.0\res
+com.example.pagepal.app-emoji2-1.2.0-27 C:\Users\Xayori\.gradle\caches\transforms-3\583f489f388639a2032f31954fc49132\transformed\emoji2-1.2.0\res
+com.example.pagepal.app-cardview-1.0.0-28 C:\Users\Xayori\.gradle\caches\transforms-3\5ba40d39a452ca9f3cb6b9f2a23fa1b2\transformed\cardview-1.0.0\res
+com.example.pagepal.app-lifecycle-livedata-core-2.6.1-29 C:\Users\Xayori\.gradle\caches\transforms-3\5fe0ce1088cc0e76a73398c34f5c9b53\transformed\lifecycle-livedata-core-2.6.1\res
+com.example.pagepal.app-runtime-saveable-1.3.0-30 C:\Users\Xayori\.gradle\caches\transforms-3\6eb5e0814535bfb3b34e8e8fa6286b5d\transformed\runtime-saveable-1.3.0\res
+com.example.pagepal.app-animation-1.3.0-31 C:\Users\Xayori\.gradle\caches\transforms-3\70337d8ed750fd09df124e41594f9fa3\transformed\animation-1.3.0\res
+com.example.pagepal.app-ui-test-manifest-1.3.0-32 C:\Users\Xayori\.gradle\caches\transforms-3\722f9987aedb2820dc956bd1d63c5ee8\transformed\ui-test-manifest-1.3.0\res
+com.example.pagepal.app-runtime-1.3.0-33 C:\Users\Xayori\.gradle\caches\transforms-3\73a26d8897f751b9411dd850ef1cc911\transformed\runtime-1.3.0\res
+com.example.pagepal.app-ui-tooling-data-1.3.0-34 C:\Users\Xayori\.gradle\caches\transforms-3\766e7d76e79da78b311ef28e56391cd9\transformed\ui-tooling-data-1.3.0\res
+com.example.pagepal.app-lifecycle-runtime-ktx-2.6.1-35 C:\Users\Xayori\.gradle\caches\transforms-3\7a86e60466b510a6f6813cf085602829\transformed\lifecycle-runtime-ktx-2.6.1\res
+com.example.pagepal.app-ui-tooling-preview-1.3.0-36 C:\Users\Xayori\.gradle\caches\transforms-3\819d95b99d7589e2230770f69282a8d0\transformed\ui-tooling-preview-1.3.0\res
+com.example.pagepal.app-lifecycle-viewmodel-savedstate-2.6.1-37 C:\Users\Xayori\.gradle\caches\transforms-3\82ac5b4dd67b2329c089f94212c628a2\transformed\lifecycle-viewmodel-savedstate-2.6.1\res
+com.example.pagepal.app-ui-tooling-1.3.0-38 C:\Users\Xayori\.gradle\caches\transforms-3\8522f6548b218569ec1c8e9898de5272\transformed\ui-tooling-1.3.0\res
+com.example.pagepal.app-appcompat-1.6.1-39 C:\Users\Xayori\.gradle\caches\transforms-3\8ef7b068f592e3f747109ed1a5426452\transformed\appcompat-1.6.1\res
+com.example.pagepal.app-material-ripple-1.3.0-40 C:\Users\Xayori\.gradle\caches\transforms-3\9d027a7e34a2089181841c9e581d5f3a\transformed\material-ripple-1.3.0\res
+com.example.pagepal.app-profileinstaller-1.3.0-41 C:\Users\Xayori\.gradle\caches\transforms-3\9fc8704cea33a4c3494ee9058668b92d\transformed\profileinstaller-1.3.0\res
+com.example.pagepal.app-lifecycle-runtime-2.6.1-42 C:\Users\Xayori\.gradle\caches\transforms-3\a11b21a712e97aa8261ddc71b60da710\transformed\lifecycle-runtime-2.6.1\res
+com.example.pagepal.app-material3-1.0.0-43 C:\Users\Xayori\.gradle\caches\transforms-3\a36495943d5aa3d43c628ecf36c1584c\transformed\material3-1.0.0\res
+com.example.pagepal.app-ui-graphics-1.3.0-44 C:\Users\Xayori\.gradle\caches\transforms-3\b943a046de0ae0790e2323d0862ab877\transformed\ui-graphics-1.3.0\res
+com.example.pagepal.app-fragment-1.3.6-45 C:\Users\Xayori\.gradle\caches\transforms-3\c40ae1849f80b7f0e7622f6decd0f41e\transformed\fragment-1.3.6\res
+com.example.pagepal.app-drawerlayout-1.1.1-46 C:\Users\Xayori\.gradle\caches\transforms-3\c621d4f6d66cfdfdbb1a4a09d2e7e54e\transformed\drawerlayout-1.1.1\res
+com.example.pagepal.app-ui-1.3.0-47 C:\Users\Xayori\.gradle\caches\transforms-3\cbc0c6c102ebff3db6c954d4c122c399\transformed\ui-1.3.0\res
+com.example.pagepal.app-appcompat-resources-1.6.1-48 C:\Users\Xayori\.gradle\caches\transforms-3\dcbbcda19a55055a7c37a4ddf3f45c6e\transformed\appcompat-resources-1.6.1\res
+com.example.pagepal.app-ui-unit-1.3.0-49 C:\Users\Xayori\.gradle\caches\transforms-3\de456423f4721a6e738622b3a4fab40b\transformed\ui-unit-1.3.0\res
+com.example.pagepal.app-lifecycle-viewmodel-ktx-2.6.1-50 C:\Users\Xayori\.gradle\caches\transforms-3\de58388f1c3471734c9ee3bbc0a3864a\transformed\lifecycle-viewmodel-ktx-2.6.1\res
+com.example.pagepal.app-foundation-1.3.0-51 C:\Users\Xayori\.gradle\caches\transforms-3\ecad61c49a013c003058a3ec8c561b06\transformed\foundation-1.3.0\res
+com.example.pagepal.app-lifecycle-viewmodel-2.6.1-52 C:\Users\Xayori\.gradle\caches\transforms-3\f25e82e4a1899764a39a42e41635b8d7\transformed\lifecycle-viewmodel-2.6.1\res
+com.example.pagepal.app-browser-1.4.0-53 C:\Users\Xayori\.gradle\caches\transforms-3\f398aa2a2f834924762773ac9cc3b5ae\transformed\browser-1.4.0\res
+com.example.pagepal.app-viewpager2-1.0.0-54 C:\Users\Xayori\.gradle\caches\transforms-3\fa93572e86a97816dedbfe16434ef552\transformed\viewpager2-1.0.0\res
+com.example.pagepal.app-material-1.9.0-55 C:\Users\Xayori\.gradle\caches\transforms-3\fc4d0ade5588ff43741e71fec673acc0\transformed\material-1.9.0\res
+com.example.pagepal.app-savedstate-ktx-1.2.1-56 C:\Users\Xayori\.gradle\caches\transforms-3\ffefb538941616a4b1e7f517f93e09c4\transformed\savedstate-ktx-1.2.1\res
+com.example.pagepal.app-google-services-57 D:\Desktop\Wag mong gagalawin\PagePal\app\build\generated\res\google-services\debug
+com.example.pagepal.app-resValues-58 D:\Desktop\Wag mong gagalawin\PagePal\app\build\generated\res\resValues\debug
+com.example.pagepal.app-packageDebugResources-59 D:\Desktop\Wag mong gagalawin\PagePal\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.pagepal.app-packageDebugResources-60 D:\Desktop\Wag mong gagalawin\PagePal\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.pagepal.app-merged_res-61 D:\Desktop\Wag mong gagalawin\PagePal\app\build\intermediates\merged_res\debug
+com.example.pagepal.app-debug-62 D:\Desktop\Wag mong gagalawin\PagePal\app\src\debug\res
+com.example.pagepal.app-main-63 D:\Desktop\Wag mong gagalawin\PagePal\app\src\main\res
