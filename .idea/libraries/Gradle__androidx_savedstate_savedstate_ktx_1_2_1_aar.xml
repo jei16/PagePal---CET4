@@ -2,8 +2,8 @@
   <library name="Gradle: androidx.savedstate:savedstate-ktx:1.2.1@aar">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ffefb538941616a4b1e7f517f93e09c4/transformed/savedstate-ktx-1.2.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ffefb538941616a4b1e7f517f93e09c4/transformed/savedstate-ktx-1.2.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ffefb538941616a4b1e7f517f93e09c4/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ffefb538941616a4b1e7f517f93e09c4/transformed/savedstate-ktx-1.2.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
