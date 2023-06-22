@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "271079873506",
+    "project_id": "synups-pagepal",
+    "storage_bucket": "synups-pagepal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271079873506:android:f9b40cb4c579c8e0c637bb",
+        "android_client_info": {
+          "package_name": "com.example.pagepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271079873506-pq4qico9ptcfmtb5cpc91dvaapqf6ddf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyveX561CYgOApp1KdeAURNRS0o2NjUNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271079873506-oa3cripqkpcpgs2r8mr4j4u461asm0d7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
