@@ -16,4 +16,5 @@
     <color name="design_color_signup">#E5EAFF</color>
     <color name="design_color_signup_text">#9D74FF</color>
     <color name="design_color_signup_textbox">#9D9D9D</color>
+    <color name="signup_button">#ACBCFF</color>
 </resources>

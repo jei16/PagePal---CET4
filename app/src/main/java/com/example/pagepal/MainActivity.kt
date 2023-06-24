@@ -15,6 +15,6 @@ import com.example.pagepal.ui.theme.PagePalTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_loginscreen)
+        setContentView(R.layout.activity_signupscreen)
 }
 }
