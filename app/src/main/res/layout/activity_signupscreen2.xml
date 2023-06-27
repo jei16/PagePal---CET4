@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -109,29 +108,70 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/pagepal_group_signup"
+        android:id="@+id/verification_group_signup"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/verification_signup_editText"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:hint="Verification Code"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:inputType="text"
+            style="@style/lineEditText"
+            android:paddingStart="12dp"/>
+
+        <View   android:id="@+id/verification_textbox_signup"
+            android:background="@drawable/signup_textbox"
+            android:alpha="0.15"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="60dp"
+            android:layout_width="400dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="A verification code has been sent to your email address. Please enter it to verify your email address."
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pagepal_group_signup2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
 
         <TextView
-            android:id="@+id/pagepal_text_signup"
-            android:layout_width="100dp"
+            android:id="@+id/pagepal_text_signup2"
+            android:layout_width="125dp"
             android:layout_height="40dp"
             android:layout_marginLeft="145dp"
-            android:layout_marginTop="130dp"
+            android:layout_marginTop="170dp"
             android:layout_centerHorizontal="true"
             android:text="PagePal"
             android:textColor="@color/design_color_signup_text"
-            android:textSize="24.6sp"
+            android:textSize="32sp"
             android:textStyle="bold"
 
             />
 
         <ImageView
-            android:id="@+id/pagepal_logo_signup"
-            android:layout_width="50dp"
-            android:layout_height="60dp"
+            android:id="@+id/pagepal_logo_signup2"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="27dp"
             android:layout_marginTop="70dp"
@@ -140,152 +180,28 @@
 
     </RelativeLayout>
 
-    <RelativeLayout android:id="@+id/username_tbox_signup_group"
-    android:layout_marginTop="315dp"
-    android:layout_marginStart="55dp"
-    android:layout_centerHorizontal="true"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/name_editText"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="0dp"
-            android:layout_width="400dp"
-            android:layout_height="60dp"
-            android:hint="Name"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:inputType="text"
-            style="@style/lineEditText"
-            android:paddingStart="12dp" />
-
-        <View   android:id="@+id/name_textbox_signup"
-            android:background="@drawable/signup_textbox"
-            android:alpha="0.15"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
-            android:layout_width="400dp"
-            android:layout_height="60dp" />
-
-    </RelativeLayout>
-
-    <RelativeLayout android:id="@+id/email_tbox_signup_group"
-        android:layout_marginTop="390dp"
-        android:layout_marginStart="55dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/email_editText"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="0dp"
-            android:layout_width="400dp"
-            android:layout_height="60dp"
-            android:hint="Email Address"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:inputType="text"
-            style="@style/lineEditText"
-            android:paddingStart="12dp"/>
-
-        <View   android:id="@+id/email_textbox_signup"
-            android:background="@drawable/signup_textbox"
-            android:alpha="0.15"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
-            android:layout_width="400dp"
-            android:layout_height="60dp" />
-
-    </RelativeLayout>
-
     <RelativeLayout
-        android:id="@+id/terms_group"
-        android:layout_marginTop="600dp"
-        android:layout_marginStart="55dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/terms_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="By signing up, you agree to PagePal's Terms of Service and Privacy Policy"
-            android:textColor="@color/design_color_signup_text"
-            />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/signup_group"
-        android:layout_width="70dp"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="130dp"
-        >
-
-        <TextView
-            android:id="@+id/signup_text"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_marginTop="150dp"
-            android:text="Sign Up"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/signin_button_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
-        android:layout_centerHorizontal="true"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Already have an account?"
-            android:textColor="@color/black"
-            android:paddingStart="100dp"/>
-        <TextView
-            android:id="@+id/signinlink"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Sign In"
-            android:textColor="@color/black"
-            android:clickable="true"
-            android:paddingStart="265dp"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/signup_button"
+        android:id="@+id/verify_group_signup"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="520dp"
-        android:layout_centerHorizontal="true"
-
-        >
+        android:layout_marginTop="440dp"
+        android:layout_centerHorizontal="true">
 
         <Button
+            android:id="@+id/verify_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Sign Up"
+            android:text="Verify"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="14sp"
             android:background="@drawable/username_textbox"
-            android:backgroundTint="@color/signup_button"
-            />
+            android:backgroundTint="@color/signup_button">
+
+        </Button>
 
     </RelativeLayout>
 
 
-</RelativeLayout>
 
+</RelativeLayout>

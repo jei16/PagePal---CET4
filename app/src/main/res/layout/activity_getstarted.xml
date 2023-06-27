@@ -78,6 +78,7 @@
         android:text="LOGIN"
         android:textColor="@color/white"
         android:shadowColor="@color/black"
+        android:onClick="openLoginScreen"
         />
 
     <Button

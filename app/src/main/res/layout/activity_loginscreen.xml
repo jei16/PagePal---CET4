@@ -121,10 +121,11 @@
                 android:layout_width="280dp"
                 android:layout_height="60dp"
                 android:hint="Username"
+                style="@style/lineEditText"
                 android:textColor="@color/white"
-                android:textStyle="italic"
                 android:textSize="12sp"
                 android:inputType="text"
+                android:paddingStart="12dp"
                 />
 
             <View   android:id="@+id/username_textbox"
@@ -153,10 +154,11 @@
                 android:layout_width="280dp"
                 android:layout_height="60dp"
                 android:hint="Password"
+                style="@style/lineEditText"
                 android:textColor="@color/white"
-                android:textStyle="italic"
                 android:textSize="12sp"
-                android:inputType="text" />
+                android:inputType="textPassword"
+                android:paddingStart="12dp"/>
 
             <View   android:id="@+id/password_textbox"
                 android:background="@drawable/username_textbox"
@@ -186,22 +188,25 @@
                 android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:textStyle="bold"
-                android:textSize="14sp"
+                android:textSize="18sp"
                 android:textColor="@color/login_color"
                 android:text="Login"
                 />
 
         </RelativeLayout>
 
-        <Button android:id="@+id/forgot_password_text"
+        <TextView android:id="@+id/forgot_password_text"
             android:background="@color/purple"
             android:textColor="@color/black"
+            android:textStyle="bold"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="560dp"
-            android:layout_width="100dp"
+            android:layout_width="139dp"
             android:layout_height="48dp"
+            android:clickable="true"
             android:text="Forgot Password"
-            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textSize="18sp"
             />
 
         <TextView android:id="@+id/welcome_text"
@@ -215,15 +220,17 @@
             android:text="W E L C O M E"
             />
 
-        <Button android:id="@+id/sign_up_text"
+        <TextView android:id="@+id/sign_up_text"
             android:background="@color/purple"
             android:textColor="@color/black"
-            android:layout_marginLeft="315dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="300dp"
             android:layout_marginTop="560dp"
-            android:layout_width="48dp"
+            android:layout_width="70dp"
             android:layout_height="48dp"
+            android:textAlignment="center"
             android:text="Sign Up"
-            android:textSize="10sp"
+            android:textSize="18sp"
             />
 
 
