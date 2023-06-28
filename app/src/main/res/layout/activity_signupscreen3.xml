@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -140,27 +139,28 @@
 
     </RelativeLayout>
 
-    <RelativeLayout android:id="@+id/name_tbox_signup_group"
-    android:layout_marginTop="315dp"
-    android:layout_marginStart="55dp"
-    android:layout_centerHorizontal="true"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+
+    <RelativeLayout android:id="@+id/username_tbox_signup_group3"
+        android:layout_marginTop="315dp"
+        android:layout_marginStart="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/name_editText"
+            android:id="@+id/username_editText3"
             android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
             android:layout_width="400dp"
             android:layout_height="60dp"
-            android:hint="Name"
+            android:hint="Username"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:inputType="text"
             style="@style/lineEditText"
             android:paddingStart="12dp" />
 
-        <View   android:id="@+id/name_textbox_signup"
+        <View   android:id="@+id/username_textbox_signup3"
             android:background="@drawable/signup_textbox"
             android:alpha="0.15"
             android:layout_marginStart="0dp"
@@ -170,7 +170,7 @@
 
     </RelativeLayout>
 
-    <RelativeLayout android:id="@+id/email_tbox_signup_group"
+    <RelativeLayout android:id="@+id/password_tbox_signup_group3"
         android:layout_marginTop="390dp"
         android:layout_marginStart="55dp"
         android:layout_centerHorizontal="true"
@@ -178,19 +178,49 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/email_editText"
+            android:id="@+id/password_editText3"
             android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
             android:layout_width="400dp"
             android:layout_height="60dp"
-            android:hint="Email Address"
+            android:hint="Password"
             android:textColor="@color/black"
             android:textSize="14sp"
-            android:inputType="text"
+            android:inputType="textPassword"
             style="@style/lineEditText"
             android:paddingStart="12dp"/>
 
-        <View   android:id="@+id/email_textbox_signup"
+        <View   android:id="@+id/email_textbox_signup3"
+            android:background="@drawable/signup_textbox"
+            android:alpha="0.15"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="400dp"
+            android:layout_height="60dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/confirmpassword_tbox_signup_group3"
+        android:layout_marginTop="465dp"
+        android:layout_marginStart="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/confirmpassword_editText3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:hint="Confirm Password"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            style="@style/lineEditText"
+            android:paddingStart="12dp"/>
+
+        <View   android:id="@+id/confirmpassword_textbox_signup3"
             android:background="@drawable/signup_textbox"
             android:alpha="0.15"
             android:layout_marginStart="0dp"
@@ -201,79 +231,16 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/terms_group"
-        android:layout_marginTop="600dp"
-        android:layout_marginStart="55dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/terms_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="By signing up, you agree to PagePal's Terms of Service and Privacy Policy"
-            android:textColor="@color/design_color_signup_text"
-            />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/signup_group"
-        android:layout_width="70dp"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="130dp"
-        >
-
-        <TextView
-            android:id="@+id/signup_text"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_marginTop="150dp"
-            android:text="Sign Up"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/signin_button_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
-        android:layout_centerHorizontal="true"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Already have an account?"
-            android:textColor="@color/black"
-            android:paddingStart="100dp"/>
-        <TextView
-            android:id="@+id/signinlink"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Sign In"
-            android:textColor="@color/black"
-            android:clickable="true"
-            android:paddingStart="265dp"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/signup_button"
+        android:id="@+id/signup_button_group3"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="540dp"
         android:layout_centerHorizontal="true"
 
         >
 
         <Button
+            android:id="@+id/signup_button3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Sign Up"
@@ -286,6 +253,25 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/signup_group3"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="130dp"
+        >
+
+        <TextView
+            android:id="@+id/signup_text3"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="150dp"
+            android:text="Sign Up"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
 
 </RelativeLayout>
-
