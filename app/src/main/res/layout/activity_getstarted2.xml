@@ -78,7 +78,7 @@
         android:textSize="16dp" />
 
     <Button
-        android:id="@+id/loginbutton"
+        android:id="@+id/backbutton1"
         android:backgroundTint="@color/purple_200"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,10 +87,11 @@
         android:text="BACK"
         android:textColor="@color/white"
         android:shadowColor="@color/black"
+        android:onClick="backButtongetstarted2"
         />
 
     <Button
-        android:id="@+id/nextbutton"
+        android:id="@+id/nextbutton2"
         android:layout_width="158dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
@@ -98,33 +99,35 @@
         android:backgroundTint="@color/purple_200"
         android:text="NEXT"
         android:textColor="@color/white"
-        android:shadowColor="@color/black"/>
+        android:shadowColor="@color/black"
+        android:onClick="nextScreen2"
+        />
 
     <ImageView
         android:layout_width="12dp"
         android:layout_height="12dp"
-        android:layout_below="@id/nextbutton"
+        android:layout_below="@id/nextbutton2"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="50dp"
         android:src="@drawable/dot_loading" />
     <ImageView
         android:layout_width="12dp"
         android:layout_height="12dp"
-        android:layout_below="@id/nextbutton"
+        android:layout_below="@id/nextbutton2"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="50dp"
         android:src="@drawable/dot_loading" />
     <ImageView
         android:layout_width="12dp"
         android:layout_height="12dp"
-        android:layout_below="@id/nextbutton"
+        android:layout_below="@id/nextbutton2"
         android:layout_marginLeft="210dp"
         android:layout_marginTop="50dp"
         android:src="@drawable/dot_loading" />
     <ImageView
         android:layout_width="12dp"
         android:layout_height="12dp"
-        android:layout_below="@id/nextbutton"
+        android:layout_below="@id/nextbutton2"
         android:layout_marginLeft="240dp"
         android:layout_marginTop="50dp"
         android:src="@drawable/dot_loading"
