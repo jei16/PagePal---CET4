@@ -122,7 +122,7 @@
                 android:layout_height="60dp"
                 android:hint="Username"
                 style="@style/lineEditText"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="12sp"
                 android:inputType="text"
                 android:paddingStart="12dp"
@@ -155,7 +155,7 @@
                 android:layout_height="60dp"
                 android:hint="Password"
                 style="@style/lineEditText"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="12sp"
                 android:inputType="textPassword"
                 android:paddingStart="12dp"/>
@@ -231,6 +231,8 @@
             android:textAlignment="center"
             android:text="Sign Up"
             android:textSize="18sp"
+            android:clickable="true"
+            android:onClick="signupScreen"
             />
 
 
