@@ -17,5 +17,11 @@ class getstarted : AppCompatActivity() {
             val intent = Intent(this, LoginScreenActivity::class.java)
             startActivity(intent)
         }
+        val nextScreen: Button = findViewById(R.id.nextbutton1)
+        nextScreen.setOnClickListener {
+            val intent = Intent(this, getstarted2::class.java)
+            startActivity(intent)
+        }
+
     }
 }

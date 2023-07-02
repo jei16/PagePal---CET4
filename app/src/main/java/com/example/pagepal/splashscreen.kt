@@ -17,7 +17,7 @@ class splashscreen : AppCompatActivity() {
 
 
             {
-                startActivity(Intent (this, MainActivity::class.java))
+                startActivity(Intent (this, getstarted::class.java))
                 finish()
             }, SPLASH_TIME)
 
