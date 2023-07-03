@@ -1,136 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fillViewport="true"
-    tools:layout_editor_absoluteX="1dp"
-    tools:layout_editor_absoluteY="1dp">
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <ImageView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-3dp"
-            android:src="@drawable/topofscreenviolet" />
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="340dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="-180dp"
-            android:src="@drawable/search" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-45dp"
+                android:src="@drawable/topofscreenviolet" />
 
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/logowhite" />
+            <ImageView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="-185dp"
+                android:src="@drawable/search" />
 
-        <ImageView
-            android:id="@+id/hat"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="209dp"
-            android:src="@drawable/universitylogo" />
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="9dp"
-            android:layout_marginTop="270dp"
-            android:src="@drawable/heart" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logowhite" />
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginLeft="259dp"
-            android:layout_marginTop="110dp"
-            android:src="@drawable/profilepic" />
+            <ImageView
+                android:id="@+id/hat"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="175dp"
+                android:src="@drawable/universitylogo" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="220dp"
+                android:src="@drawable/heart" />
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="75dp"
-            android:layout_marginTop="213dp"
-            android:text="University of something"
-            android:textColor="@color/white"
-            android:textSize="11sp" />
-
-        <TextView
-            android:id="@+id/borrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="45dp"
-            android:layout_marginTop="440dp"
-            android:text="BORROWER RATING:"
-            android:textColor="@color/black"
-            android:textSize="12sp"/>
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="480dp"
-            android:text="LENDER RATING:"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            />
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/profilepic" />
 
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="110sp"
-            android:text="PROFILE"
-            android:textColor="@color/purple_200"
-            android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="180dp"
+                android:text="University of something"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="150sp"
-            android:text="Hello, User!"
-            android:textColor="@color/white"
-            android:textSize="35sp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80sp"
-            android:layout_marginTop="315sp"
-            android:text="Pal Score     0.0"
-            android:textColor="@color/white"
-            android:textSize="45sp"
-            android:textStyle="bold|italic"
+            <TextView
+                android:id="@+id/borrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="360dp"
+                android:text="BORROWER RATING:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
 
+            <TextView
 
-            />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="410dp"
+                android:text="LENDER RATING:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
 
-        <EditText
-            android:id="@+id/editTextText"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="34dp"
-            android:ems="14"
-            android:inputType="text"
-            android:text="Search books..."
-            android:textSize="14sp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="4100dp"
+                android:text="scroll test"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                />
 
 
-    </FrameLayout>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="95sp"
+                android:text="PROFILE"
+                android:textColor="@color/purple_200"
+                android:textSize="16sp" />
 
-</ScrollView>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="120sp"
+                android:text="Hello, User!"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80sp"
+                android:layout_marginTop="260sp"
+                android:text="Pal Score   0.0"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold|italic"
+
+
+                />
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="30dp"
+                android:ems="14"
+                android:inputType="text"
+                android:text="Search books..."
+                android:textSize="14sp" />
+
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_200"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>
+
