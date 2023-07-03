@@ -140,7 +140,7 @@
     </RelativeLayout>
 
 
-    <RelativeLayout android:id="@+id/username_tbox_signup_group3"
+    <RelativeLayout android:id="@+id/username_txtBox_signup_group3"
         android:layout_marginTop="315dp"
         android:layout_marginStart="55dp"
         android:layout_centerHorizontal="true"
@@ -160,7 +160,7 @@
             style="@style/lineEditText"
             android:paddingStart="12dp" />
 
-        <View   android:id="@+id/username_textbox_signup3"
+        <View   android:id="@+id/username_txtBox_signup3"
             android:background="@drawable/signup_textbox"
             android:alpha="0.15"
             android:layout_marginStart="0dp"

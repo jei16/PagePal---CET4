@@ -128,7 +128,7 @@
             style="@style/lineEditText"
             android:paddingStart="12dp"/>
 
-        <View   android:id="@+id/verification_textbox_signup"
+        <View   android:id="@+id/verification_txtBox_signup"
             android:background="@drawable/signup_textbox"
             android:alpha="0.15"
             android:layout_marginStart="0dp"
@@ -188,7 +188,7 @@
         android:layout_centerHorizontal="true">
 
         <Button
-            android:id="@+id/verify_button"
+            android:id="@+id/verifyBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Verify"
