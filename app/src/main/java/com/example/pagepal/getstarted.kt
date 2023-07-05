@@ -4,21 +4,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import android.widget.Button
+import com.example.pagepal.databinding.ActivityGetstartedBinding
 
 
 class getstarted : AppCompatActivity() {
+
+    private lateinit var binding: ActivityGetstartedBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_getstarted)
 
+        binding = ActivityGetstartedBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val openLoginScreen: Button = findViewById(R.id.loginbutton1)
-        openLoginScreen.setOnClickListener {
+        binding.loginbutton1.setOnClickListener{
             val intent = Intent(this, LoginScreenActivity::class.java)
             startActivity(intent)
         }
-        val nextScreen: Button = findViewById(R.id.nextbutton1)
-        nextScreen.setOnClickListener {
+
+        binding.nextbutton1.setOnClickListener{
             val intent = Intent(this, getstarted2::class.java)
             startActivity(intent)
         }

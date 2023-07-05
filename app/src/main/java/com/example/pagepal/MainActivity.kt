@@ -15,6 +15,8 @@ import android.content.Intent
 import android.widget.Button
 
 class MainActivity : ComponentActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_getstarted)

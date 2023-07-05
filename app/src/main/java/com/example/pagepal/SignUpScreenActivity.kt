@@ -7,13 +7,11 @@ import android.widget.TextView
 import android.widget.Button
 import android.widget.Toast
 import com.example.pagepal.databinding.ActivitySignupscreen3Binding
-import com.example.pagepal.databinding.ActivitySignupscreenBinding
-import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpScreenActivity : AppCompatActivity() {
 
-    private lateinit var binding :ActivitySignupscreen3Binding
+    private lateinit var binding : ActivitySignupscreen3Binding
     private lateinit var firebaseAuth: FirebaseAuth
 
 
@@ -24,6 +22,7 @@ class SignUpScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
+
 
         binding.signupButton3.setOnClickListener{
             val email = binding.usernameEditText3.text.toString()
@@ -36,6 +35,7 @@ class SignUpScreenActivity : AppCompatActivity() {
                     firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                         if(it.isSuccessful) {
                             val intent = Intent(this, LoginScreenActivity::class.java)
+                            startActivity(intent)
                         }else{
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                         }
