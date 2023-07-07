@@ -206,6 +206,7 @@
             android:clickable="true"
             android:text="Forgot Password"
             android:textAlignment="center"
+            android:onClick="forgotpasswordScreen"
             android:textSize="18sp"
             />
 

@@ -27,6 +27,13 @@ class LoginScreenActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+        val forgotpasswordScreen: TextView = findViewById(R.id.forgot_password_text)
+        forgotpasswordScreen.setOnClickListener {
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.loginButton.setOnClickListener{
             val username = binding.usernameEdittext.text.toString()
             val password = binding.passwordEdittext.text.toString()

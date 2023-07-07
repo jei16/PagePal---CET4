@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollable_borrow_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F6F6FF"
+
+            >
+
+            <FrameLayout
+                android:id="@+id/header_borrow_page"
+                android:layout_width="411dp"
+                android:layout_height="160dp"
+                android:background="@color/white"
+                >
+
+                <ImageView
+                    android:id="@+id/logo_borrow_page"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/logo_borrow_page">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="mode"
+                    android:textColor="#A8A6A6"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginLeft="251dp"
+                    android:textSize="12sp"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/borrow_text_borrow_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B O R R O W"
+                    android:textColor="#9E55E3"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginLeft="150dp"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/lend_mode_button_borrow_page"
+                    android:layout_width="135dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/gradient_rectangle"
+                    android:text="L E N D  M O D E "
+                    android:layout_marginTop="75dp"
+                    android:layout_marginLeft="138dp"
+                    android:clickable="true"
+                    android:textSize="15sp"
+                    >
+
+                </Button>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_swap_vert_24"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginLeft="110dp"
+                    >
+
+                </ImageView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/search_bar_borrow_page_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="160dp">
+
+                <EditText
+                    android:id="@+id/search_bar_borrow_page"
+                    android:layout_width="320dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="43dp"
+                    android:background="@drawable/search_borrow_page"
+                    android:hint="Search for books..."
+                    android:textSize="18dp"
+                    style="@style/lineEditText"
+                    android:paddingStart="12dp"
+                    >
+
+                </EditText>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="43dp">
+
+                <View
+                    android:id="@+id/donate_rectangle_borrow_page"
+                    android:layout_width="320dp"
+                    android:layout_height="141dp"
+                    android:background="@drawable/donate_rectangle">
+
+                </View>
+
+                <Button
+                    android:layout_width="87dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/white_rectangle_10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="DONATE"
+                    android:textColor="#7A6BBC"
+                    android:textStyle="bold"
+                    android:clickable="true"
+
+                    >
+                </Button>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Touched by a Pal's story?
+                    Help them now!"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+
+            </FrameLayout>
+        </FrameLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
