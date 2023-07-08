@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +12,11 @@
         android:background="@color/white"
         app:layout_constraintTop_toBottomOf="parent"
         tools:context=".getstarted"
-        tools:layout_editor_absoluteX="-98dp">
+        tools:layout_editor_absoluteX="-98dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
             android:id="@+id/circle_design"
@@ -141,17 +145,20 @@
     </RelativeLayout>
 
     <RelativeLayout android:id="@+id/name_tbox_signup_group"
-    android:layout_marginTop="315dp"
-    android:layout_marginStart="55dp"
-    android:layout_centerHorizontal="true"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_group">
 
         <EditText
             android:id="@+id/name_editText"
             android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
-            android:layout_width="400dp"
+            android:layout_width="360dp"
             android:layout_height="60dp"
             android:hint="Name"
             android:textColor="@color/black"
@@ -165,23 +172,26 @@
             android:alpha="0.15"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
-            android:layout_width="400dp"
+            android:layout_width="360dp"
             android:layout_height="60dp" />
 
     </RelativeLayout>
 
     <RelativeLayout android:id="@+id/email_tbox_signup_group"
-        android:layout_marginTop="390dp"
-        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_tbox_signup_group">
 
         <EditText
             android:id="@+id/email_editText"
             android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
-            android:layout_width="400dp"
+            android:layout_width="360dp"
             android:layout_height="60dp"
             android:hint="Email Address"
             android:textColor="@color/black"
@@ -195,18 +205,20 @@
             android:alpha="0.15"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
-            android:layout_width="400dp"
+            android:layout_width="360dp"
             android:layout_height="60dp" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/terms_group"
-        android:layout_marginTop="600dp"
-        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_button_group">
 
         <TextView
             android:id="@+id/terms_text"
@@ -220,72 +232,81 @@
 
     <RelativeLayout
         android:id="@+id/signup_group"
-        android:layout_width="70dp"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_marginTop="130dp"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pagepal_group_signup"
+        app:layout_constraintTop_toTopOf="@id/pagepal_group_signup">
 
         <TextView
-            android:id="@+id/signup_text"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:id="@+id/signup_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
             android:text="Sign Up"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/signin_button_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerInParent="true"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@id/email_tbox_signup_group"
         >
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Already have an account?"
+            android:clickable="false"
             android:textColor="@color/black"
-            android:paddingStart="100dp"/>
-        <TextView
-            android:id="@+id/signinlink"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+
+            />
+        <Button
+            android:id="@+id/signin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Sign In"
             android:textColor="@color/black"
-            android:clickable="true"
-            android:paddingStart="265dp"/>
+            android:background="@android:color/transparent"
+            android:onClick="SigninScreen" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/signupBtn"
+        android:id="@+id/signup_button_group"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="520dp"
         android:layout_centerHorizontal="true"
-
-        >
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signin_button_group">
 
         <Button
+            android:id="@+id/signup_button3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Sign Up"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="14sp"
             android:background="@drawable/username_textbox"
             android:backgroundTint="@color/signup_button"
-            />
+            android:text="CONTINUE"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
