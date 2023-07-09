@@ -6,47 +6,43 @@ import android.os.Bundle
 import android.widget.TextView
 import android.widget.Button
 import android.widget.Toast
-import com.example.pagepal.databinding.ActivitySignupscreen3Binding
+import com.example.pagepal.databinding.ActivitySignupscreenBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpScreenActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivitySignupscreen3Binding
+    private lateinit var binding: ActivitySignupscreenBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivitySignupscreen3Binding.inflate(layoutInflater)
+        binding = ActivitySignupscreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+        binding.signupBtn.setOnClickListener {
+            val name = binding.nameEditText.text.toString()
+            val email = binding.emailEditText.text.toString()
 
-        binding.signupButton3.setOnClickListener{
-            val email = binding.usernameEditText3.text.toString()
-            val password = binding.passwordEditText3.text.toString()
-            val confirmpassword = binding.confirmpasswordEditText3.text.toString()
-
-            if (email.isNotEmpty() && password.isNotEmpty() && confirmpassword.isNotEmpty()){
-                if (password == confirmpassword) {
-
-                    firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
-                        if(it.isSuccessful) {
+            if (name.isNotEmpty() && email.isNotEmpty()) {
+                firebaseAuth.createUserWithEmailAndPassword(email, name)
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
                             val intent = Intent(this, LoginScreenActivity::class.java)
                             startActivity(intent)
-                        }else{
-                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                        } else {
+                            Toast.makeText(this, task.exception.toString(), Toast.LENGTH_SHORT)
+                                .show()
                         }
                     }
-                }else{
-                    Toast.makeText(this, "Password does not match", Toast.LENGTH_SHORT).show()
-                }
-            }else{
-                    Toast.makeText(this, "Please fill in the blanks", Toast.LENGTH_SHORT).show()
-                }
+            } else {
+                Toast.makeText(this, "Please fill in the blanks", Toast.LENGTH_SHORT).show()
             }
         }
+
+    }
 
 }

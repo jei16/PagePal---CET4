@@ -275,7 +275,7 @@
 
             />
         <Button
-            android:id="@+id/signin_button"
+            android:id="@+id/signinlink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign In"
@@ -296,7 +296,7 @@
         app:layout_constraintTop_toTopOf="@+id/signin_button_group">
 
         <Button
-            android:id="@+id/signup_button3"
+            android:id="@+id/signupBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/username_textbox"
