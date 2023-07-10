@@ -1,163 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:openDrawer="start"
+    android:id="@+id/ProfileDrawer"
 
-    <ScrollView
+    android:fitsSystemWindows="true"
+
+    tools:context=".ui.theme.ProfilepageActivity">
+
+    <!-- Content View -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:layout_height="match_parent">
 
-        <FrameLayout
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="16dp">
 
-            <ImageView
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-45dp"
-                android:src="@drawable/topofscreenviolet" />
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="95dp"
-                android:layout_marginTop="-185dp"
-                android:src="@drawable/search" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-45dp"
+                    android:src="@drawable/topofscreenviolet"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/logowhite" />
+                <ImageView
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="-185dp"
+                    android:src="@drawable/search"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/hat"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="175dp"
-                android:src="@drawable/universitylogo" />
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="9dp"
-                android:layout_marginTop="220dp"
-                android:src="@drawable/heart" />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/logowhite"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:layout_width="160dp"
-                android:layout_height="160dp"
-                android:layout_marginLeft="220dp"
-                android:layout_marginTop="100dp"
-                android:src="@drawable/profilepic" />
+                <ImageView
+                    android:id="@+id/hat"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="175dp"
+                    android:src="@drawable/universitylogo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="220dp"
+                    android:src="@drawable/heart"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="100dp"
+                    android:src="@drawable/profilepic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="180dp"
+                    android:text="University of something"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/borrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="360dp"
+                    android:text="BORROWER RATING:"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="410dp"
+                    android:text="LENDER RATING:"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="4100dp"
+                    android:text="scroll test"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginTop="95sp"
+                    android:text="PROFILE"
+                    android:textColor="@color/purple_200"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40sp"
+                    android:layout_marginTop="120sp"
+                    android:text="Hello, User!"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80sp"
+                    android:layout_marginTop="260sp"
+                    android:text="Pal Score   0.0"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="30dp"
+                    android:ems="14"
+                    android:hint="Search books..."
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="75dp"
-                android:layout_marginTop="180dp"
-                android:text="University of something"
-                android:textColor="@color/white"
-                android:textSize="11sp" />
+            </FrameLayout>
 
-            <TextView
-                android:id="@+id/borrow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="45dp"
-                android:layout_marginTop="360dp"
-                android:text="BORROWER RATING:"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="12sp"/>
+        </ScrollView>
 
-            <TextView
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:menu="@menu/bottom_navigation_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="410dp"
-                android:text="LENDER RATING:"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:textSize="12sp"/>
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="4100dp"
-                android:text="scroll test"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                />
-
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40sp"
-                android:layout_marginTop="95sp"
-                android:text="PROFILE"
-                android:textColor="@color/purple_200"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40sp"
-                android:layout_marginTop="120sp"
-                android:text="Hello, User!"
-                android:textColor="@color/white"
-                android:textSize="32sp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="80sp"
-                android:layout_marginTop="260sp"
-                android:text="Pal Score   0.0"
-                android:textColor="@color/white"
-                android:textSize="40sp"
-                android:textStyle="bold|italic"
-
-
-                />
-
-            <EditText
-                android:id="@+id/editTextText"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginLeft="105dp"
-                android:layout_marginTop="30dp"
-                android:ems="14"
-                android:inputType="text"
-                android:text="Search books..."
-                android:textSize="14sp" />
-
-
-        </FrameLayout>
-
-    </ScrollView>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Drawer Content -->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/white"
-        app:menu="@menu/bottom_navigation_bar"
+        android:layout_gravity="start|center"
+        app:itemIconTint="@color/white"
+        android:backgroundTint="@color/lavender"
+        android:paddingBottom="20dp"
+        app:menu="@menu/sliding_menu"
+        app:itemVerticalPadding="10sp"
+        android:theme="@style/NavigationTheme"
 
         />
 
-</RelativeLayout>
 
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

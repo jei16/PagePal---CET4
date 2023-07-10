@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn ="navigation_view"
+    android:layout_width="100dp"
+    >
+
+
+
+
+    <group
+        android:id="@+id/first_group"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/sliding_menu_help"
+           android:icon="@drawable/help1"
+            android:title="Help"
+            />
+
+        <item
+            android:id="@+id/sliding_menu_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+
+    </group>
+
+    <group>
+
+
+        <item
+            android:id="@+id/sliding_menu_borrowandlending"
+            android:icon="@drawable/borroww"
+            android:title="Borrow and Lending"/>
+
+        <item
+            android:id="@+id/sliding_menu_buynsell"
+            android:icon="@drawable/buyandsell"
+            android:title="Buy and Sell"/>
+
+
+        <item
+            android:id="@+id/sliding_menu_community"
+            android:icon="@drawable/community"
+            android:title="Community"
+            />
+
+
+    </group>
+
+
+
+
+
+
+</menu>

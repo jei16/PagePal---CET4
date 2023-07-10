@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PagePal</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_borrow">BorrowActivity</string>
+    <string name="open">Open </string>
+    <string name="close">Close </string>
+
 </resources>

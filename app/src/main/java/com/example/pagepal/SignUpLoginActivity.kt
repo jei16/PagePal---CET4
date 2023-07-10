@@ -20,7 +20,7 @@ class SignUpLoginActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.signinlink.setOnClickListener{
+        binding.pagepalGroupSignup.setOnClickListener{
             val intent = Intent(this, LoginScreenActivity::class.java)
             startActivity(intent)
         }
