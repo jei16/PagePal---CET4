@@ -9,12 +9,13 @@
 
     android:fitsSystemWindows="true"
 
-    tools:context=".ui.theme.ProfilepageActivity">
+    tools:context=".ProfilepageActivity">
 
     <!-- Content View -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <include
             android:id="@+id/toolbar"
@@ -30,6 +31,7 @@
             tools:layout_editor_absoluteX="16dp">
 
             <FrameLayout
+                android:id="@+id/fragment_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -180,6 +182,7 @@
                     android:layout_marginLeft="105dp"
                     android:layout_marginTop="30dp"
                     android:ems="14"
+                    style="@style/lineEditText"
                     android:hint="Search books..."
                     android:inputType="text"
                     android:textSize="14sp"
@@ -205,15 +208,16 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <!-- Drawer Content -->
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="start|center"
         app:itemIconTint="@color/white"
-        android:backgroundTint="@color/lavender"
-        android:paddingBottom="20dp"
+        android:paddingBottom="10dp"
         app:menu="@menu/sliding_menu"
-        app:itemVerticalPadding="10sp"
+        app:itemVerticalPadding="15sp"
         android:theme="@style/NavigationTheme"
+        android:background="@drawable/nav_view_rounded_corners"
 
         />
 

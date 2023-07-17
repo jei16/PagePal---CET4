@@ -18,6 +18,7 @@
 
 
             <FrameLayout
+                android:id="@+id/lendingPage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#F6F6FF"
@@ -68,15 +69,14 @@
                     </TextView>
 
                     <Button
-                        android:id="@+id/lend_mode_button_lend_page"
-                        android:layout_width="135dp"
+                        android:id="@+id/btnLendMode"
+                        android:layout_width="150dp"
                         android:layout_height="48dp"
                         android:background="@drawable/gradient_lend_page_button"
-                        android:text="L E N D  M O D E "
+                        android:text="B O R R O W  M O D E "
                         android:layout_marginTop="75dp"
                         android:layout_marginLeft="138dp"
                         android:textColor="@color/white"
-                        android:clickable="true"
                         android:textSize="15sp"
                         >
 
@@ -125,6 +125,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="250dp"
                     android:layout_marginLeft="43dp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/search_bar_borrow_page_group"
                     >
@@ -175,6 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="400dp"
                     android:layout_marginLeft="43dp"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf= "@id/donate_group_borrow_page"
                     >

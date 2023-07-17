@@ -26,8 +26,12 @@
 
     </group>
 
-    <group>
 
+
+    <group>
+        <item android:title="Features">
+
+        <menu>
 
         <item
             android:id="@+id/sliding_menu_borrowandlending"
@@ -46,7 +50,9 @@
             android:title="Community"
             />
 
+        </menu>
 
+    </item>
     </group>
 
 
