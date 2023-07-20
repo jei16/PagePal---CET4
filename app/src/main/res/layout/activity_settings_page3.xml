@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".getstarted"
+        tools:layout_editor_absoluteX="-98dp">
+
+        <FrameLayout
+            android:id="@+id/header_settings_page1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_marginTop="-163dp"
+                android:background="@drawable/gradient_header_settings1"/>
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="49dp"
+                android:background="@drawable/baseline_arrow_back_24"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S E T T I N G S"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="39dp"
+                android:layout_marginLeft="155dp"
+
+                />
+
+            <View
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="99dp"
+                android:layout_marginLeft="170dp"
+                android:background="@drawable/img_2"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_settings_page1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="270dp"
+                    android:background="@drawable/buttons_settings_page"
+                    android:clickable="true"
+
+                    android:contentDescription="Notification preferences" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Notification preferences"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="285dp"
+                    />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="272dp"
+                    android:src="@drawable/baseline_navigate_next_24"
+                    android:contentDescription="Notification preferences navi"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="320dp"
+                    android:background="@drawable/buttons_settings_page"
+                    android:clickable="true"
+                    android:contentDescription="Notification sounds"
+
+                    android:paddingStart="-100dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Notification sounds"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="335dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="370dp"
+                    android:background="@drawable/buttons_settings_page"
+                    android:clickable="true"
+                    android:contentDescription="Vibration"
+
+                    android:paddingStart="-100dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Vibration"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="385dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="420dp"
+                    android:background="@drawable/buttons_settings_page"
+                    android:clickable="true"
+                    android:contentDescription="Notification badges"
+
+                    android:paddingStart="-100dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Notification badges"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="435dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="470dp"
+                    android:background="@drawable/buttons_settings_page"
+                    android:clickable="true"
+                    android:contentDescription="Lockscreen notifications"
+
+                    android:paddingStart="-100dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Lockscreen notifications"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="485dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="520dp"
+                    android:background="@drawable/buttons_settings_page"
+                    android:clickable="true"
+                    android:contentDescription="Banner notifications"
+
+                    android:paddingStart="-100dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Banner notifications"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="535dp"
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="135dp"
+                android:text="NOTIFICATIONS"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
