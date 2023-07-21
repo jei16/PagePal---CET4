@@ -182,7 +182,7 @@
                     android:id="@+id/request_a_book_rectangle_borrow_page"
                     android:layout_width="320dp"
                     android:layout_height="141dp"
-                    android:background="@drawable/rectangle_request">
+                    android:background="@drawable/donate_rectangle">
 
                 </View>
 
@@ -195,7 +195,7 @@
                     android:background="@drawable/white_rectangle_10dp"
                     android:clickable="true"
                     android:text="Request book"
-                    android:textColor="#45B0E5"
+                    android:textColor="#7A6BBC"
                     android:textStyle="bold"
 
                     ></Button>
@@ -204,7 +204,7 @@
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="25dp"
                     android:text="Can't see a book you need?"
                     android:textColor="@color/white"
                     android:textSize="18dp"
@@ -216,7 +216,7 @@
                     android:layout_width="149dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30dp"
-                    android:layout_marginTop="70dp"
+                    android:layout_marginTop="75dp"
                     android:text="Post it now and we'll find a Pal for you"
                     android:textColor="@color/white"
                     android:textSize="14sp"
