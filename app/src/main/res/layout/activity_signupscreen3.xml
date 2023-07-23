@@ -161,6 +161,35 @@
         <EditText
             android:id="@+id/username_editText3"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:inputType="text"
+            style="@style/lineEditText"
+            android:paddingStart="12dp" />
+
+        <View   android:id="@+id/email_txtBox_signup3"
+            android:background="@drawable/signup_textbox"
+            android:alpha="0.15"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="70dp"
+            android:layout_width="360dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/email_txtBox_signup"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="70dp"
+            android:alpha="0.15"
+            android:background="@drawable/signup_textbox" />
+        <EditText
+            android:id="@+id/email_editText3"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
             android:layout_width="360dp"
             android:layout_height="60dp"
@@ -171,13 +200,24 @@
             style="@style/lineEditText"
             android:paddingStart="12dp" />
 
-        <View   android:id="@+id/username_txtBox_signup3"
+        <View   android:id="@+id/emails_txtBox_signup3"
             android:background="@drawable/signup_textbox"
             android:alpha="0.15"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
             android:layout_width="360dp"
             android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/emailss_txtBox_signup"
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-dp"
+            android:alpha="0.15"
+            android:background="@drawable/signup_textbox" />
+
+
 
     </RelativeLayout>
 
@@ -187,7 +227,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/username_txtBox_signup_group3">
@@ -196,7 +236,7 @@
     <EditText
             android:id="@+id/password_editText3"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="9dp"
             android:layout_width="360dp"
             android:layout_height="60dp"
             android:hint="Password"
@@ -210,9 +250,11 @@
             android:background="@drawable/signup_textbox"
             android:alpha="0.15"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="9dp"
             android:layout_width="360dp"
             android:layout_height="60dp" />
+
+
 
     </RelativeLayout>
 
@@ -266,7 +308,7 @@
             android:id="@+id/signup_text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="140dp"
             android:text="Sign Up"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -291,8 +333,10 @@
             android:background="@drawable/username_textbox"
             android:backgroundTint="@color/signup_button"
             android:text="CONTINUE"
+            android:layout_marginTop="20dp"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="11sp"
+
             android:textStyle="bold" />
 
     </RelativeLayout>
