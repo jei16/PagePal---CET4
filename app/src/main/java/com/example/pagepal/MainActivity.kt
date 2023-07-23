@@ -10,6 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.pagepal.databinding.LayoutBinding
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -19,6 +20,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
         binding =LayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
         replaceFragment(ProfileFragment())
