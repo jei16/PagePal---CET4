@@ -74,6 +74,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val profileDrawer = findViewById<DrawerLayout>(R.id.MainDrawer)
         when (item.itemId) {
+            R.id.sliding_menu_settings -> supportFragmentManager.beginTransaction()
+                .replace(R.id.main_container, SettingsFragment()).commit()
             R.id.sliding_menu_borrowandlending -> supportFragmentManager.beginTransaction()
                 .replace(R.id.main_container, BorrowFragment()).commit()
 

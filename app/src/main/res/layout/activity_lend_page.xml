@@ -193,7 +193,7 @@
                     </View>
 
                     <Button
-                        android:id="@+id/request_book_button_lend_page"
+                        android:id="@+id/lend_book_btn"
                         android:layout_width="87dp"
                         android:layout_height="48dp"
                         android:background="@drawable/white_rectangle_10dp"
