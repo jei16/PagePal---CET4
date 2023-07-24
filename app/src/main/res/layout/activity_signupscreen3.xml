@@ -213,7 +213,7 @@
             android:layout_width="360dp"
             android:layout_height="60dp"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="-dp"
+            android:layout_marginTop="0dp"
             android:alpha="0.15"
             android:background="@drawable/signup_textbox" />
 
@@ -333,9 +333,9 @@
             android:background="@drawable/username_textbox"
             android:backgroundTint="@color/signup_button"
             android:text="CONTINUE"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:textColor="@color/black"
-            android:textSize="11sp"
+            android:textSize="11dp"
 
             android:textStyle="bold" />
 
