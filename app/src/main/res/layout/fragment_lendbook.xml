@@ -171,7 +171,7 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="48dp"
                                 android:layout_marginLeft="35dp"
                                 android:layout_marginTop="390dp"
                                 android:editable="true"
@@ -189,21 +189,31 @@
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
+                            <FrameLayout
+                                android:id="@+id/imgappear"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
 
-                            <View
-                                android:layout_width="140dp"
-                                android:layout_height="140dp"
-                                android:layout_marginLeft="23dp"
-                                android:layout_marginTop="455dp"
-                                android:background="@drawable/rectangle1_post_a_book_borrow_page" />
+                                <View
+                                    android:layout_width="140dp"
+                                    android:layout_height="140dp"
+                                    android:background="@drawable/rectangle1_post_a_book_borrow_page"
+                                    android:layout_marginTop="455dp"
+                                    android:layout_marginLeft="23dp"
+                                    />
 
-                            <View
-                                android:id="@+id/img_of_book"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginLeft="70dp"
-                                android:layout_marginTop="500dp"
-                                android:background="@drawable/img_9" />
+                                <View
+                                    android:id="@+id/img_of_book"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/img_9"
+                                    android:layout_marginTop="500dp"
+                                    android:clickable="true"
+                                    android:contentDescription="Image Display"
+                                    android:layout_marginLeft="70dp"/>
+
+
+                            </FrameLayout>
 
                             <TextView
                                 android:layout_width="wrap_content"

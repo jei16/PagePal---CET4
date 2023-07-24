@@ -44,6 +44,18 @@ class LendBookFragment : Fragment() {
             transaction.commit()
         }
 
+        val y = inflater.inflate(R.layout.fragment_lendbook, container, false)
+
+        val addPhotos: View = y.findViewById(R.id.img_of_book)
+        addPhotos.setOnClickListener {
+            val imagePickerFragment = ImagePickerPABLendPageFragment()
+            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
+            transaction.replace(R.id.imgappear, imagePickerFragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+
+        }
+
 
 
         binding.postbooklend.setOnClickListener {
