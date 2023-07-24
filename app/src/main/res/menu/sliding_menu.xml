@@ -53,6 +53,18 @@
     </item>
     </group>
 
+    <group>
+                <item
+                    android:id="@+id/sliding_menu_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout"
+                    />
+    </group>
+
+
+
+
+
 
 
 
