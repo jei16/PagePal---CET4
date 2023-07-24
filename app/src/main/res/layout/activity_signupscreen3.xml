@@ -159,7 +159,7 @@
         app:layout_constraintTop_toTopOf="@id/signup_group3">
 
         <EditText
-            android:id="@+id/username_editText3"
+            android:id="@+id/EditTxtEmail"
             android:layout_marginStart="10dp"
             android:layout_marginTop="70dp"
             android:layout_width="360dp"
@@ -188,7 +188,7 @@
             android:alpha="0.15"
             android:background="@drawable/signup_textbox" />
         <EditText
-            android:id="@+id/email_editText3"
+            android:id="@+id/EditTxtUsername"
             android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
             android:layout_width="360dp"
@@ -234,7 +234,7 @@
 
 
     <EditText
-            android:id="@+id/password_editText3"
+            android:id="@+id/EditTxtPass"
             android:layout_marginStart="10dp"
             android:layout_marginTop="9dp"
             android:layout_width="360dp"
@@ -270,7 +270,7 @@
         app:layout_constraintTop_toBottomOf="@id/password_tbox_signup_group3">
 
         <EditText
-            android:id="@+id/confirmpassword_editText3"
+            android:id="@+id/EditTxtCPass"
             android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
             android:layout_width="360dp"
@@ -282,7 +282,7 @@
             style="@style/lineEditText"
             android:paddingStart="12dp"/>
 
-        <View   android:id="@+id/confirmpassword_textbox_signup3"
+        <View   android:id="@+id/ViewCPass"
             android:background="@drawable/signup_textbox"
             android:alpha="0.15"
             android:layout_marginStart="0dp"
@@ -327,7 +327,7 @@
         app:layout_constraintTop_toTopOf="@+id/confirmpassword_tbox_signup_group3">
 
         <Button
-            android:id="@+id/signup_button3"
+            android:id="@+id/btnSignup3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/username_textbox"
