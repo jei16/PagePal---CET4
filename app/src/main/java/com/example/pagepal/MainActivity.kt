@@ -1,5 +1,6 @@
 package com.example.pagepal
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -11,11 +12,13 @@ import androidx.fragment.app.Fragment
 import com.example.pagepal.databinding.LayoutBinding
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.FirebaseApp
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     lateinit var toggle: ActionBarDrawerToggle
     private lateinit var binding: LayoutBinding
+    private lateinit var firebaseAuth: FirebaseAuth
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -82,6 +85,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 .replace(R.id.main_container, SettingsFragment()).commit()
             R.id.sliding_menu_borrowandlending -> supportFragmentManager.beginTransaction()
                 .replace(R.id.main_container, BorrowFragment()).commit()
+            R.id.sliding_menu_logout -> {
+               logoutUser()
+            }
 
         }
         profileDrawer.closeDrawer(GravityCompat.START)
@@ -97,6 +103,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             onBackPressedDispatcher.onBackPressed()
         }
 
+    }
+
+    private fun logoutUser() {
+        val firebaseAuth = FirebaseAuth.getInstance()
+        firebaseAuth.signOut()
+
+        // Redirect the user to the login or splash screen
+        // You can choose the appropriate activity to redirect the user after logout.
+        val intent = Intent(this, LoginScreenActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+        startActivity(intent)
+        finish() // Optionally, you may want to finish the current activity to prevent going back to it with the back button.
     }
 }
 

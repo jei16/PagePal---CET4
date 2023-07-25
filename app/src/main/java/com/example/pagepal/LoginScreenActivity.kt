@@ -81,14 +81,6 @@ class LoginScreenActivity : AppCompatActivity() {
         }
     }
 
-    override fun onStart() {
-        super.onStart()
-
-        if (firebaseAuth.currentUser != null) {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-    }
 
     private fun getUserIDFromEmail(email: String, callback: (String?) -> Unit) {
             val db = FirebaseDatabase.getInstance().reference
