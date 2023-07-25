@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "271079873506",
-    "project_id": "synups-pagepal",
-    "storage_bucket": "synups-pagepal.appspot.com"
+    "project_number": "470324303759",
+    "firebase_url": "https://synups-default-rtdb.firebaseio.com",
+    "project_id": "synups",
+    "storage_bucket": "synups.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:271079873506:android:f9b40cb4c579c8e0c637bb",
+        "mobilesdk_app_id": "1:470324303759:android:1fea14ab7f081a177fddfa",
         "android_client_info": {
-          "package_name": "com.example.pagepal"
+          "package_name": "com.synups.pagepal"
         }
       },
       "oauth_client": [
         {
-          "client_id": "271079873506-pq4qico9ptcfmtb5cpc91dvaapqf6ddf.apps.googleusercontent.com",
+          "client_id": "470324303759-i2dlgoceqaa63fdnkn52k3va0lfsokpc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAyveX561CYgOApp1KdeAURNRS0o2NjUNY"
+          "current_key": "AIzaSyAvGGB5jcgi_MBc5jd4eANJ34juZnz-MKU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "271079873506-oa3cripqkpcpgs2r8mr4j4u461asm0d7.apps.googleusercontent.com",
+              "client_id": "470324303759-i2dlgoceqaa63fdnkn52k3va0lfsokpc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
