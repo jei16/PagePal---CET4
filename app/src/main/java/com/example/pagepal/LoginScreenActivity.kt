@@ -57,7 +57,7 @@ class LoginScreenActivity : AppCompatActivity() {
                                 if (it.isSuccessful){
                                     val Verify = firebaseAuth.currentUser?.isEmailVerified
                                     if (Verify == true){
-                                        val intent = Intent(this, ActivityProfilePageBinding::class.java)
+                                        val intent = Intent(this, MainActivity::class.java)
                                         startActivity(intent)
                                     }else{
                                         Toast.makeText(this, "Please Verify your Email", Toast.LENGTH_SHORT).show()
@@ -92,9 +92,9 @@ class LoginScreenActivity : AppCompatActivity() {
 
     private fun getUserIDFromEmail(email: String, callback: (String?) -> Unit) {
             val db = FirebaseDatabase.getInstance().reference
-            val URef = db.child("users")
+            val uRef = db.child("users")
 
-            URef.orderByChild("email").equalTo(email)
+            uRef.orderByChild("email").equalTo(email)
                 .addListenerForSingleValueEvent(object : ValueEventListener {
                     override fun onDataChange(snapshot: DataSnapshot) {
                         if (snapshot.exists()) {

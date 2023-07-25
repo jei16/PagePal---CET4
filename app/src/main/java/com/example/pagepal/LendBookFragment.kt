@@ -35,7 +35,7 @@ class LendBookFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentLendbookBinding.inflate(inflater, container, false)
 
-        firebaseRef = FirebaseDatabase.getInstance("https://synups-pagepal-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("Lend Books Info")
+        firebaseRef = FirebaseDatabase.getInstance().getReference("Lend Books Info")
 
 
         binding.btnBorrowMode.setOnClickListener {
@@ -44,10 +44,7 @@ class LendBookFragment : Fragment() {
             transaction.commit()
         }
 
-        val y = inflater.inflate(R.layout.fragment_lendbook, container, false)
-
-        val addPhotos: View = y.findViewById(R.id.img_of_book)
-        addPhotos.setOnClickListener {
+            binding.imgOfbook.setOnClickListener {
             val imagePickerFragment = ImagePickerPABLendPageFragment()
             val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
             transaction.replace(R.id.imgappear, imagePickerFragment)

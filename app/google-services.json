@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:470324303759:android:1fea14ab7f081a177fddfa",
         "android_client_info": {
-          "package_name": "com.synups.pagepal"
+          "package_name": "com.example.pagepal"
         }
       },
       "oauth_client": [

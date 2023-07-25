@@ -203,7 +203,7 @@
                                     />
 
                                 <View
-                                    android:id="@+id/img_of_book"
+                                    android:id="@+id/imgOfbook"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:background="@drawable/img_9"
