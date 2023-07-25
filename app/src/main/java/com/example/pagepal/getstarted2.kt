@@ -8,21 +8,25 @@ import com.example.pagepal.databinding.ActivityGetstarted2Binding
 
 class getstarted2 : AppCompatActivity() {
 
-    private lateinit var binding:ActivityGetstarted2Binding
+    private lateinit var binding: ActivityGetstarted2Binding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityGetstarted2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        binding.backbutton1.setOnClickListener{
+        binding.backbutton1.setOnClickListener {
             val intent = Intent(this, getstarted::class.java)
             startActivity(intent)
+
+            overridePendingTransition(0, 0)
         }
 
-        binding.nextbutton2.setOnClickListener(){
+        binding.nextbutton2.setOnClickListener {
             val intent = Intent(this, getstarted3::class.java)
             startActivity(intent)
+
+            overridePendingTransition(0, 0)
         }
     }
 }

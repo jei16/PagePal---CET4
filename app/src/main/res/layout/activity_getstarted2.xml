@@ -109,7 +109,7 @@
         android:layout_below="@id/nextbutton2"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/dot_loading" />
+        android:src="@drawable/dot_notloading" />
     <ImageView
         android:layout_width="12dp"
         android:layout_height="12dp"
@@ -123,14 +123,14 @@
         android:layout_below="@id/nextbutton2"
         android:layout_marginLeft="210dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/dot_loading" />
+        android:src="@drawable/dot_notloading" />
     <ImageView
         android:layout_width="12dp"
         android:layout_height="12dp"
         android:layout_below="@id/nextbutton2"
         android:layout_marginLeft="240dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/dot_loading"
+        android:src="@drawable/dot_notloading"
         />
 
 
