@@ -39,6 +39,11 @@ class LendBookFragment : Fragment() {
 
 
         binding.btnBorrowMode.setOnClickListener {
+            val postabookPageContainer = requireActivity().findViewById<ViewGroup>(R.id.post_a_book_lendingPage)
+
+
+           postabookPageContainer?.removeAllViews()
+
             val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
             transaction.replace(R.id.post_a_book_lendingPage, BorrowFragment())
             transaction.commit()

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
 
     <ScrollView
@@ -22,8 +23,8 @@
 
             <FrameLayout
                 android:id="@+id/lendingPage"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="#F6F6FF"
                 app:layout_constraintStart_toStartOf="parent"
 
@@ -268,220 +269,11 @@ don't use?"
 
                 </FrameLayout>
 
-                <FrameLayout
-                    android:id="@+id/image_book_group_lend_page"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="580dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/request_book_group_borrow_page" >
-
-
-                    <View
-                        android:layout_width="400px"
-                        android:layout_height="450px"
-                        android:layout_marginLeft="34dp"
-                        android:background="@drawable/white_rectangle_10dp">
-
-                    </View>
-
-                    <View
-                        android:id="@+id/image_book_lend_page"
-                        android:layout_width="350px"
-                        android:layout_height="300px"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="43dp"
-                        android:background="@drawable/replace_image_of_book">
-
-                    </View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="Name of book"
-                        android:layout_marginTop="125dp"
-                        android:layout_marginLeft="43dp"
-                        >
-
-                    </TextView>
 
 
 
-                    <View
-                        android:id="@+id/image_right_view_book_lend_page"
-                        android:layout_width="400px"
-                        android:layout_height="450px"
-                        android:layout_marginLeft="213dp"
-                        android:background="@drawable/white_rectangle_10dp">
-
-                    </View>
-
-                    <View
-                        android:layout_width="350px"
-                        android:layout_height="300px"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="222dp"
-                        android:background="@drawable/replace_image_of_book">
-
-                    </View>
-
-                    <TextView
-                        android:id="@+id/image_right_textview_book_lend_page"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="Name of book"
-                        android:layout_marginTop="125dp"
-                        android:layout_marginLeft="222dp"
-                        >
-
-                    </TextView>
 
 
-
-                </FrameLayout>
-
-
-                <FrameLayout
-                    android:id="@+id/image_book_group2_lend_page"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="760dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/image_book_group_borrow_page" >
-
-
-                    <View
-                        android:layout_width="400px"
-                        android:layout_height="450px"
-                        android:layout_marginLeft="34dp"
-                        android:background="@drawable/white_rectangle_10dp">
-
-                    </View>
-
-                    <View
-                        android:id="@+id/image2_book_lend_page"
-                        android:layout_width="350px"
-                        android:layout_height="300px"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="43dp"
-                        android:background="@drawable/replace_image_of_book">
-
-                    </View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="Name of book"
-                        android:layout_marginTop="125dp"
-                        android:layout_marginLeft="43dp"
-                        >
-
-                    </TextView>
-
-                    <View
-                        android:id="@+id/image2_right_view_book_lend_page"
-                        android:layout_width="400px"
-                        android:layout_height="450px"
-                        android:layout_marginLeft="213dp"
-                        android:background="@drawable/white_rectangle_10dp">
-
-                    </View>
-
-                    <View
-                        android:layout_width="350px"
-                        android:layout_height="300px"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="222dp"
-                        android:background="@drawable/replace_image_of_book">
-
-                    </View>
-
-                    <TextView
-                        android:id="@+id/image2_right_textview_book_lend_page"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="Name of book"
-                        android:layout_marginTop="125dp"
-                        android:layout_marginLeft="222dp"
-                        >
-
-                    </TextView>
-
-
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:id="@+id/image_book_group3_lend_page"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="940dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/image_book_group2_borrow_page" >
-
-
-                    <View
-                        android:layout_width="400px"
-                        android:layout_height="450px"
-                        android:layout_marginLeft="34dp"
-                        android:background="@drawable/white_rectangle_10dp">
-
-                    </View>
-
-                    <View
-                        android:id="@+id/image3_book_lend_page"
-                        android:layout_width="350px"
-                        android:layout_height="300px"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="43dp"
-                        android:background="@drawable/replace_image_of_book">
-
-                    </View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="Name of book"
-                        android:layout_marginTop="125dp"
-                        android:layout_marginLeft="43dp"
-                        >
-
-                    </TextView>
-
-                    <View
-                        android:id="@+id/image3_right_view_book_lend_page"
-                        android:layout_width="400px"
-                        android:layout_height="450px"
-                        android:layout_marginLeft="213dp"
-                        android:background="@drawable/white_rectangle_10dp">
-
-                    </View>
-
-                    <View
-                        android:layout_width="350px"
-                        android:layout_height="300px"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="222dp"
-                        android:background="@drawable/replace_image_of_book">
-
-                    </View>
-
-                    <TextView
-                        android:id="@+id/image3_right_textview_book_lend_page"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="Name of book"
-                        android:layout_marginTop="125dp"
-                        android:layout_marginLeft="222dp"
-                        >
-
-                    </TextView>
-
-
-                </FrameLayout>
 
 
                 <FrameLayout
@@ -491,66 +283,7 @@ don't use?"
                     android:layout_marginTop="1120dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/image_book_group3_borrow_page" >
-
-
-                    <View
-                        android:layout_width="400px"
-                        android:layout_height="450px"
-                        android:layout_marginLeft="34dp"
-                        android:background="@drawable/white_rectangle_10dp">
-
-                    </View>
-
-                    <View
-                        android:id="@+id/image4_book_lend_page"
-                        android:layout_width="350px"
-                        android:layout_height="300px"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="43dp"
-                        android:background="@drawable/replace_image_of_book">
-
-                    </View>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="Name of book"
-                        android:layout_marginTop="125dp"
-                        android:layout_marginLeft="43dp"
-                        >
-
-                    </TextView>
-
-                    <View
-                        android:id="@+id/image4_right_view_book_lend_page"
-                        android:layout_width="400px"
-                        android:layout_height="450px"
-                        android:layout_marginLeft="213dp"
-                        android:background="@drawable/white_rectangle_10dp">
-
-                    </View>
-
-                    <View
-                        android:layout_width="350px"
-                        android:layout_height="300px"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="222dp"
-                        android:background="@drawable/replace_image_of_book">
-
-                    </View>
-
-                    <TextView
-                        android:id="@+id/image4_right_textview_book_lend_page"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="Name of book"
-                        android:layout_marginTop="125dp"
-                        android:layout_marginLeft="222dp"
-                        >
-
-                    </TextView>
-
+                     >
 
 
                 </FrameLayout>
@@ -571,7 +304,8 @@ don't use?"
 
                 </TextView>
 
-            </FrameLayout>
+            </FrameLayout
+       >
 
 
 
