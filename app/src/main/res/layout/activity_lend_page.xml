@@ -174,7 +174,7 @@
                         android:layout_marginTop="30dp"
                         android:text="Touched by a
                         Pal's story?"
-                        android:textSize="18dp"
+                        android:textSize="20sp"
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         >
@@ -184,16 +184,15 @@
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="30dp"
-                        android:layout_marginTop="54dp"
-                        android:text= "                          Help
+                        android:layout_marginTop="58dp"
+                        android:text= "                            Help
                         them now!"
-                        android:textSize="15dp"
+                        android:textSize="16sp"
                         android:textColor="@color/white"
                         android:textStyle="bold|italic"
                         >
 
                     </TextView>
-
 
 
 
@@ -218,10 +217,10 @@
                     </View>
                     <View
                         android:id="@+id/glove"
-                        android:layout_marginTop="74dp"
+                        android:layout_marginTop="70dp"
                         android:layout_width="67dp"
                         android:layout_height="67dp"
-                        android:layout_marginLeft="125dp"
+                        android:layout_marginLeft="115dp"
                         android:background="@drawable/pointingampig"/>
 
                     <Button

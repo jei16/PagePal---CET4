@@ -207,7 +207,7 @@
                     android:layout_width="320dp"
                     android:layout_height="141dp"
                     android:background="@drawable/donate_rectangle"
-                    android:backgroundTint="#45B0E5">
+                    android:backgroundTint="@color/purple_200">
 
                 </View>
 
@@ -220,7 +220,7 @@
                     android:background="@drawable/white_rectangle_10dp"
                     android:clickable="true"
                     android:text="Request book"
-                    android:textColor="#45B0E5"
+                    android:textColor="@color/purple_200"
                     android:textStyle="bold"
 
                     ></Button>
@@ -545,8 +545,8 @@ now and we'll find a Pal for you!"
                 android:layout_marginLeft="43dp"
                 android:layout_marginTop="550dp"
                 android:text="Based on your recent borrowed books"
-                android:textColor="@color/black"
-                android:textSize="18sp"
+                android:textColor="@color/purple_200"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/donate_group_lend_page">
 
