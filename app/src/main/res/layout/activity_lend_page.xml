@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
 
-        <ScrollView
+    <ScrollView
             android:id="@+id/scrollable_lend_page"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,6 +121,8 @@
 
                     </EditText>
 
+
+
                 </FrameLayout>
 
                 <FrameLayout
@@ -157,19 +159,42 @@
                         >
                     </Button>
 
+                    <View
+                        android:id="@+id/people"
+                        android:layout_marginTop="-59dp"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/help_apal"/>
+
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="30dp"
-                        android:text="Touched by a Pal's story?
-                    Help them now!"
+                        android:text="Touched by a
+                        Pal's story?"
                         android:textSize="18dp"
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         >
 
                     </TextView>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="54dp"
+                        android:text= "                          Help
+                        them now!"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold|italic"
+                        >
+
+                    </TextView>
+
+
 
 
                 </FrameLayout>
@@ -191,6 +216,13 @@
                         android:background="@drawable/rectangle_request">
 
                     </View>
+                    <View
+                        android:id="@+id/glove"
+                        android:layout_marginTop="74dp"
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:layout_marginLeft="125dp"
+                        android:background="@drawable/pointingampig"/>
 
                     <Button
                         android:id="@+id/lend_book_btn"
@@ -211,11 +243,12 @@
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="30dp"
-                        android:layout_marginTop="25dp"
-                        android:text="Want to Lend a Book?"
-                        android:textSize="20dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Got a book you
+don't use?"
+                        android:textSize="20sp"
                         android:textColor="@color/white"
-                        android:textStyle=""
+                        android:textStyle="bold"
                         >
 
                     </TextView>
@@ -224,11 +257,11 @@
                         android:layout_width="149dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="30dp"
-                        android:layout_marginTop="80dp"
+                        android:layout_marginTop="83dp"
                         android:text="Post it now!"
                         android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold">
+                        android:textSize="14sp"
+                        android:textStyle="bold|italic">
 
                     </TextView>
 
