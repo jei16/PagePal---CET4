@@ -40,7 +40,7 @@ class SignUpScreenActivity : AppCompatActivity() {
                             URef.child(user?.uid?:"").child("name").setValue(name)
                             URef.child(user?.uid?:"").child("email").setValue(email)
 
-                            user?.sendEmailVerification()?.addOnCompleteListener{
+                            firebaseAuth.currentUser?.sendEmailVerification()?.addOnCompleteListener{
                                 Toast.makeText(this, "Please Verify your Email.", Toast.LENGTH_SHORT).show()
                             }?.addOnFailureListener{
                                 Toast.makeText( this, task.toString(), Toast.LENGTH_SHORT).show()
@@ -65,19 +65,6 @@ class SignUpScreenActivity : AppCompatActivity() {
 
     }
 
-    override fun onStart() {
-        super.onStart()
-        val currentUser = firebaseAuth.currentUser
-        if (currentUser!!.isEmailVerified) {
-            // If the user is logged in and their email is verified, redirect to MainActivity
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish() // Optionally, you may want to finish the SignUpScreenActivity to prevent going back to it with the back button.
-        } else {
-            // If the user is not logged in or their email is not verified, they stay on SignUpScreenActivity.
-            // You may also show a message or UI indication here if needed.
-        }
 
-    }
 
 }
