@@ -8,14 +8,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="@dimen/_16sdp"
         android:background="@drawable/background_messaging"
         app:layout_constraintBottom_toTopOf="@id/sendButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/headerMessaging" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/headerMessaging"
