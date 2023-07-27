@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             when(it.itemId){
 
                 R.id.profile -> replaceFragment(ProfileFragment())
+                R.id.pals -> replaceFragment(PalFragment())
                 else->{
 
             }
