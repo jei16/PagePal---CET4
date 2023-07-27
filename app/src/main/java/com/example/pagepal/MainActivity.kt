@@ -3,6 +3,7 @@ package com.example.pagepal
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.ViewGroup
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -48,6 +49,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             when(it.itemId){
 
                 R.id.profile -> replaceFragment(ProfileFragment())
+                R.id.pals -> replaceFragment(PalFragment())
                 else->{
 
             }
@@ -81,10 +83,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val profileDrawer = findViewById<DrawerLayout>(R.id.MainDrawer)
         when (item.itemId) {
-            R.id.sliding_menu_settings -> supportFragmentManager.beginTransaction()
-                .replace(R.id.main_container, SettingsFragment()).commit()
-            R.id.sliding_menu_borrowandlending -> supportFragmentManager.beginTransaction()
-                .replace(R.id.main_container, BorrowFragment()).commit()
+            R.id.sliding_menu_settings -> {
+                profileDrawer.findViewById<ViewGroup>(R.id.main_container)?.removeAllViews()
+                supportFragmentManager.beginTransaction()
+                .replace(R.id.main_container, SettingsFragment()).commit()}
+            R.id.sliding_menu_borrowandlending -> {
+                profileDrawer.findViewById<ViewGroup>(R.id.main_container)?.removeAllViews()
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.main_container, BorrowFragment()).commit()}
+
             R.id.sliding_menu_logout -> {
                logoutUser()
             }

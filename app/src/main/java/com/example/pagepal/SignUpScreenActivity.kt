@@ -36,9 +36,11 @@ class SignUpScreenActivity : AppCompatActivity() {
                         if (task.isSuccessful) {
 
                             val user = firebaseAuth.currentUser
+                            val uid = firebaseAuth.currentUser?.uid
                             val URef = FirebaseDatabase.getInstance().getReference("users")
                             URef.child(user?.uid?:"").child("name").setValue(name)
                             URef.child(user?.uid?:"").child("email").setValue(email)
+                            URef.child(user?.uid?:"").child("uid").setValue(uid)
 
                             firebaseAuth.currentUser?.sendEmailVerification()?.addOnCompleteListener{
                                 Toast.makeText(this, "Please Verify your Email.", Toast.LENGTH_SHORT).show()
