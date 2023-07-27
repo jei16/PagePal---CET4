@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toTopOf="@id/sendButton"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/headerMessaging"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_100sdp"
@@ -41,67 +41,35 @@
             android:id="@+id/iconofUser"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
-            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginStart="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_30sdp"
             android:src="@drawable/img"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pal Name"
             android:textStyle="bold"
             android:textSize="@dimen/_20sdp"
             android:textColor="@color/black"
-            android:layout_marginStart="@dimen/_135sdp"
-            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_45sdp"
             />
+
+
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
             android:src="@drawable/img_11"
-            android:layout_marginStart="@dimen/_250sdp"
+            android:layout_marginStart="@dimen/_40sdp"
             android:layout_marginTop="@dimen/_45sdp"/>
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="@dimen/_15sdp"
-            android:layout_height="@dimen/_15sdp"
-            android:src="@drawable/img_12"
-            android:layout_marginLeft="@dimen/_130sdp"
-            android:layout_marginTop="@dimen/_70sdp"/>
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="@dimen/_15sdp"
-            android:layout_height="@dimen/_15sdp"
-            android:src="@drawable/img_12"
-            android:layout_marginLeft="@dimen/_150sdp"
-            android:layout_marginTop="@dimen/_70sdp"/>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="@dimen/_15sdp"
-            android:layout_height="@dimen/_15sdp"
-            android:src="@drawable/img_12"
-            android:layout_marginLeft="@dimen/_170sdp"
-            android:layout_marginTop="@dimen/_70sdp"/>
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="@dimen/_15sdp"
-            android:layout_height="@dimen/_15sdp"
-            android:src="@drawable/img_12"
-            android:layout_marginLeft="@dimen/_190sdp"
-            android:layout_marginTop="@dimen/_70sdp"/>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="@dimen/_15sdp"
-            android:layout_height="@dimen/_15sdp"
-            android:src="@drawable/img_12"
-            android:layout_marginLeft="@dimen/_210sdp"
-            android:layout_marginTop="@dimen/_70sdp"/>
-
-
-    </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
     
-    <FrameLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/sendButton"
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
@@ -120,9 +88,9 @@
             android:layout_marginLeft="@dimen/_4sdp"
             android:src="@drawable/img_10"/>
 
-    </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
     
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/inputMessage"
         android:layout_width="0dp"
         android:layout_height="@dimen/_40sdp"
