@@ -6,20 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pagepal.Message
 import com.example.pagepal.R
 import com.google.firebase.auth.FirebaseAuth
 
-class MessageAdapter(val context: Context, val messageList: ArrayList<android.os.Message>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class MessageAdapter(val context: Context, val messageList: ArrayList<Message>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    val Item_Sent = 2
-    val Item_Receive = 1
+    val itemSent = 2
+    val itemReceive = 1
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
         if (viewType == 1){
 
             val view: View = LayoutInflater.from(context).inflate(R.layout.activity_receive_message, parent,false)
-            return RecieveViewHolder(view)
+            return ReceiveViewHolder(view)
 
         }else{
 
@@ -36,11 +37,11 @@ class MessageAdapter(val context: Context, val messageList: ArrayList<android.os
 
         if (FirebaseAuth.getInstance().currentUser?.uid.equals(currentMessage.senderId)){
 
-            return Item_Sent
+            return itemSent
 
         }else{
 
-            return Item_Receive
+            return itemReceive
 
         }
 
@@ -62,7 +63,7 @@ class MessageAdapter(val context: Context, val messageList: ArrayList<android.os
             holder.sentMessage.text = currentMessage.message
 
         }else{
-            val viewHolder = holder as RecieveViewHolder
+            val viewHolder = holder as ReceiveViewHolder
             holder.receiveMessage.text = currentMessage.message
 
         }
@@ -75,7 +76,7 @@ class MessageAdapter(val context: Context, val messageList: ArrayList<android.os
 
     }
 
-    class RecieveViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+    class ReceiveViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         val receiveMessage = itemView.findViewById<TextView>(R.id.txt_receive_message)
 
