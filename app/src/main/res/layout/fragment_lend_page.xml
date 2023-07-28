@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     >
 
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
             android:id="@+id/scrollable_lend_page"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fillViewport="true"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -21,21 +21,24 @@
 
 
 
-            <FrameLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/lendingPage"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#F6F6FF"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
 
                 >
 
-                <FrameLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/header_lend_page"
-                    android:layout_width="411dp"
-                    android:layout_height="160dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
                     android:background="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     >
 
@@ -43,22 +46,24 @@
                         android:id="@+id/logo_lend_page"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:layout_marginTop="42dp"
-                        android:layout_marginLeft="30dp"
-                        android:src="@drawable/logo_lend_page">
-
-                    </ImageView>
+                        android:layout_marginRight="250dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/logo_lend_page"/>
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="29dp"
                         android:text="mode"
                         android:textColor="#A8A6A6"
-                        android:layout_marginTop="29dp"
-                        android:layout_marginLeft="226dp"
                         android:textSize="12sp"
-                        >
-                    </TextView>
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
                         android:id="@+id/borrow_text_lend_page"
@@ -67,7 +72,9 @@
                         android:text="L E N D"
                         android:textColor="#45B0E5"
                         android:layout_marginTop="42dp"
-                        android:layout_marginLeft="165dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
                         android:textSize="20dp">
 
                     </TextView>
@@ -79,7 +86,9 @@
                         android:background="@drawable/gradient_lend_page_button"
                         android:text="B O R R O W  M O D E "
                         android:layout_marginTop="75dp"
-                        android:layout_marginLeft="138dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
                         android:textColor="@color/white"
                         android:textSize="15sp"
                         >
@@ -91,31 +100,37 @@
                         android:layout_height="30dp"
                         android:src="@drawable/baseline_swap_vert_24"
                         android:layout_marginTop="85dp"
-                        android:layout_marginLeft="110dp"
+                        android:layout_marginRight="170dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
                         >
 
                     </ImageView>
 
-                </FrameLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <FrameLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/search_bar_lend_page_group"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="160dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/header_borrow_page">
+                    app:layout_constraintTop_toBottomOf="@id/header_lend_page">
 
                     <EditText
                         android:id="@+id/search_bar_lend_page"
-                        android:layout_width="320dp"
+                        android:layout_width="match_parent"
                         android:layout_height="48dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginLeft="43dp"
                         android:background="@drawable/search_lend_page"
                         android:hint="Search for books you have that you can lend..."
-                        android:textSize="12sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textSize="18dp"
                         style="@style/lineEditText"
                         android:paddingStart="12dp"
                         >
@@ -124,23 +139,25 @@
 
 
 
-                </FrameLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <FrameLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/donate_group_lend_page"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="250dp"
-                    android:layout_marginLeft="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/search_bar_borrow_page_group"
+                    app:layout_constraintTop_toBottomOf="@id/search_bar_lend_page_group"
                     >
 
                     <View
                         android:id="@+id/donate_rectangle_lend_page"
                         android:layout_width="320dp"
                         android:layout_height="141dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         android:background="@drawable/donate_rectangle">
 
                     </View>
@@ -156,6 +173,9 @@
                         android:textColor="#7A6BBC"
                         android:textStyle="bold"
                         android:clickable="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
 
                         >
                     </Button>
@@ -166,62 +186,71 @@
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         android:layout_marginLeft="20dp"
-                        android:background="@drawable/help_apal"/>
+                        android:background="@drawable/help_apal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
                         android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="30dp"
-                        android:text="Touched by a
-                        Pal's story?"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="105dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Touched by a Pal's story?"
                         android:textSize="20sp"
                         android:textColor="@color/white"
                         android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         >
 
                     </TextView>
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="58dp"
-                        android:text= "                            Help
-                        them now!"
+                        android:layout_marginRight="105dp"
+                        android:layout_marginTop="75dp"
+                        android:text= "Help them now!"
                         android:textSize="16sp"
                         android:textColor="@color/white"
                         android:textStyle="bold|italic"
-                        >
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
 
-                    </TextView>
 
 
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                </FrameLayout>
-
-                <FrameLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/request_book_group_lend_page"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="400dp"
-                    android:layout_marginLeft="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf= "@id/donate_group_borrow_page"
+                    app:layout_constraintTop_toBottomOf= "@id/donate_group_lend_page"
                     >
                     <View
                         android:id="@+id/request_a_book_rectangle_lend_page"
                         android:layout_width="320dp"
                         android:layout_height="141dp"
-                        android:background="@drawable/rectangle_request">
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/rectangle_request"/>
 
-                    </View>
                     <View
                         android:id="@+id/glove"
                         android:layout_marginTop="70dp"
                         android:layout_width="67dp"
                         android:layout_height="67dp"
-                        android:layout_marginLeft="115dp"
+                        android:layout_marginRight="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         android:background="@drawable/pointingampig"/>
 
                     <Button
@@ -234,83 +263,97 @@
                         android:text="lend book"
                         android:textColor="#45B0E5"
                         android:textStyle="bold"
-                        android:clickable="true"
-
-                        >
-                    </Button>
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:clickable="true"/>
 
                     <TextView
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="35dp"
-                        android:text="Got a book you
-don't use?"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="105dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Got a book you don't use?"
                         android:textSize="20sp"
                         android:textColor="@color/white"
                         android:textStyle="bold"
-                        >
-
-                    </TextView>
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
-                        android:layout_width="149dp"
+                        android:layout_width="170dp"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="83dp"
+                        android:layout_marginRight="105dp"
+                        android:layout_marginTop="70dp"
                         android:text="Post it now!"
                         android:textColor="@color/white"
                         android:textSize="14sp"
-                        android:textStyle="bold|italic">
-
-                    </TextView>
-
-
-
-                </FrameLayout>
+                        android:textStyle="bold|italic"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
 
 
 
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
 
 
-                <FrameLayout
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/image_book_group4_lend_page"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="1120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/request_book_group_lend_page"
                      >
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Book requests from other Pals"
+                        android:textColor="#45B0E5"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
 
-                </FrameLayout>
 
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-                <TextView
-                    android:layout_marginTop="550dp"
-                    app:layout_constraintTop_toBottomOf="@id/donate_group_lend_page"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Book requests from other Pals"
-                    android:textColor="#45B0E5"
-                    android:layout_marginLeft="43dp"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    >
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingStart="43dp"
+                    app:layout_constraintTop_toBottomOf="@id/image_book_group4_lend_page">
 
-                </TextView>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/bookRqsts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
 
-            </FrameLayout
-       >
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
 
-        </ScrollView>
+        </androidx.core.widget.NestedScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,17 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:context=".getstarted"
-        tools:layout_editor_absoluteX="-98dp">
+        tools:context=".getstarted">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#F6F6FF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="#F6F6FF">
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/header_post_a_book_borrow_page"
@@ -49,13 +48,16 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="251dp"
+                    android:layout_marginLeft="110dp"
                     android:layout_marginTop="29dp"
                     android:text="mode"
                     android:textColor="#A8A6A6"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/borrow_text_borrow_page"
@@ -83,10 +85,11 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
+                    android:id="@+id/imageView7"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginRight="170dp"
                     android:layout_marginTop="85dp"
+                    android:layout_marginRight="170dp"
                     android:src="@drawable/baseline_swap_vert_24"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -104,38 +107,42 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/header_post_a_book_borrow_page">
 
-                <TextView
-                    android:id="@+id/whatbookText"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What book are you looking for?"
-                    android:textColor="#7A6BBC"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginRight="110dp"
+                    android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_conversion_absoluteHeight="24dp"
-                    tools:layout_editor_absoluteY="160dp"
-                    tools:layout_editor_absoluteX="20dp"
-                    tools:layout_conversion_absoluteWidth="250dp" />
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/whatbookText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What book are you looking for?"
+                        android:textColor="#7A6BBC"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
 
-                <TextView
-                    android:id="@+id/filloutText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Fill out information below."
-                    android:textColor="#C0C0C4"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.026"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/whatbookText"
-                    tools:layout_conversion_absoluteHeight="19dp"
-                    tools:layout_conversion_absoluteWidth="162dp" />
+                    <TextView
+                        android:id="@+id/filloutText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Fill out information below."
+                        android:textColor="#C0C0C4"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.026"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/whatbookText"
+                        tools:layout_conversion_absoluteHeight="19dp"
+                        tools:layout_conversion_absoluteWidth="162dp" />
+
+                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -145,14 +152,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/gradient_rectangle_post_a_book_borrow_page"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.8"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/belowHeader"
-                android:background="@drawable/gradient_rectangle_post_a_book_borrow_page"
-                >
+                app:layout_constraintTop_toBottomOf="@id/belowHeader">
 
 
                 <TextView
@@ -163,13 +169,13 @@
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    tools:layout_conversion_absoluteHeight="24dp"
-                    tools:layout_conversion_absoluteWidth="99dp"
-                    tools:layout_editor_absoluteX="158dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_conversion_absoluteHeight="24dp"
+                    tools:layout_conversion_absoluteWidth="99dp"
+                    tools:layout_editor_absoluteX="158dp"
                     tools:layout_editor_absoluteY="220dp" />
 
                 <EditText
@@ -194,235 +200,281 @@
                     tools:layout_conversion_absoluteWidth="240dp" />
 
 
-                <TextView
-                    android:id="@+id/authorText"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginTop="90dp"
-                    android:text="AUTHOR"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:paddingStart="12dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_conversion_absoluteHeight="24dp"
-                    tools:layout_conversion_absoluteWidth="71dp" />
-
-                <EditText
-                    style="@style/lineEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_marginTop="90dp"
-                    android:padding="10dp"
-                    android:hint="Who wrote the book? Type here..."
-                    android:background="@drawable/rectangle1_post_a_book_borrow_page"
-                    android:paddingStart="12dp"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginLeft="90dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_conversion_absoluteHeight="48dp"
-                    tools:layout_conversion_absoluteWidth="240dp"
-                    tools:layout_editor_absoluteX="132dp"
-                    tools:layout_editor_absoluteY="320dp" />
-
-                <TextView
-                    android:id="@+id/textView32"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginTop="157dp"
-                    android:paddingStart="12dp"
-                    android:text="DATE OF PUBLICATION"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_conversion_absoluteHeight="24dp"
-                    tools:layout_conversion_absoluteWidth="71dp" />
-
-                <EditText
-                    style="@style/lineEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:padding="10dp"
-                    android:background="@drawable/rectangle1_post_a_book_borrow_page"
-                    android:hint="DD/MM/YYYY"
-                    android:layout_marginLeft="210dp"
-                    android:layout_marginRight="12dp"
-                    android:inputType="date"
-                    android:paddingStart="12dp"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:layout_marginTop="147dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_conversion_absoluteHeight="48dp"
-                    tools:layout_conversion_absoluteWidth="190dp"
-                    tools:layout_editor_absoluteX="132dp"
-                    tools:layout_editor_absoluteY="320dp" />
-
-                <TextView
-                    android:id="@+id/textView31"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginTop="202dp"
-                    android:paddingStart="12dp"
-                    android:text="ESTIMATED BORROW \nDURATION"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_conversion_absoluteHeight="24dp"
-                    tools:layout_conversion_absoluteWidth="71dp" />
-
-                <EditText
-                    style="@style/lineEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:background="@drawable/rectangle1_post_a_book_borrow_page"
-                    android:hint="ex. 5 days"
-                    android:padding="10dp"
-                    android:inputType="date"
-                    android:paddingStart="12dp"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:layout_marginLeft="200dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_marginTop="202dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_conversion_absoluteHeight="48dp"
-                    tools:layout_conversion_absoluteWidth="190dp"
-                    tools:layout_editor_absoluteX="180dp"
-                    tools:layout_editor_absoluteY="440dp" />
-
-                <TextView
-                    android:id="@+id/textView30"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_marginTop="260dp"
-                    android:paddingStart="12dp"
-                    android:text="EDIT IN SETTINGS*"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_conversion_absoluteHeight="24dp"
-                    tools:layout_conversion_absoluteWidth="71dp" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/contactInfo"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_marginTop="290dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:padding="12dp"
-                    android:background="@drawable/rectangle2_post_a_book_borrow_page"
-
-                    >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="ADDRESS: insert address insert address insert"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:layout_marginRight="12dp"
-                        android:layout_marginLeft="12dp"
-                        tools:layout_conversion_absoluteHeight="19dp"
-                        tools:layout_conversion_absoluteWidth="298dp"
-                        tools:layout_editor_absoluteX="55dp"
-                        app:layout_constraintStart_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:layout_editor_absoluteY="525dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CONTACT INFORMATION: 09000000000"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginRight="12dp"
-                        android:layout_marginLeft="12dp"
-                        app:layout_constraintStart_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:layout_conversion_absoluteHeight="19dp"
-                        tools:layout_conversion_absoluteWidth="257dp"
-                        tools:layout_editor_absoluteX="55dp"
-                        tools:layout_editor_absoluteY="550dp" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintStart_toEndOf="parent"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <TextView
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/authorText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="103dp"
+                            android:paddingStart="12dp"
+                            android:text="AUTHOR"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:layout_conversion_absoluteHeight="24dp"
+                            tools:layout_conversion_absoluteWidth="71dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="SAMPLE IMAGE"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="11dp"
-                        android:layout_marginTop="380dp"
-                        app:layout_constraintStart_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:paddingStart="12dp"
-                        tools:layout_conversion_absoluteHeight="24dp"
-                        tools:layout_conversion_absoluteWidth="130dp"
-                        tools:layout_editor_absoluteX="48dp"
-                        tools:layout_editor_absoluteY="590dp" />
+                        android:paddingStart="12dp">
+
+                        <EditText
+                            style="@style/lineEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/rectangle1_post_a_book_borrow_page"
+                            android:hint="Who wrote the book? Type here..."
+                            android:padding="10dp"
+                            android:paddingStart="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:layout_conversion_absoluteHeight="48dp"
+                            tools:layout_conversion_absoluteWidth="240dp"
+                            tools:layout_editor_absoluteX="132dp"
+                            tools:layout_editor_absoluteY="320dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="410dp"
-                        android:contentDescription="Picture of Book"
-                        android:clickable="true"
-                        app:layout_constraintStart_toEndOf="parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="157dp"
+                            android:paddingStart="12dp"
+                            android:text="DATE OF PUBLICATION"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="12dp">
+
+                        <EditText
+                            style="@style/lineEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="147dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/rectangle1_post_a_book_borrow_page"
+                            android:hint="DD/MM/YYYY"
+                            android:inputType="date"
+                            android:padding="10dp"
+                            android:paddingStart="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:layout_conversion_absoluteHeight="48dp"
+                            tools:layout_conversion_absoluteWidth="190dp"
+                            tools:layout_editor_absoluteX="132dp"
+                            tools:layout_editor_absoluteY="320dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/estBorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="202dp"
+                            android:paddingStart="12dp"
+                            android:text="ESTIMATED BORROW \nDURATION"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="12dp">
+
+                        <EditText
+                            style="@style/lineEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="202dp"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/rectangle1_post_a_book_borrow_page"
+                            android:hint="ex. 5 days"
+                            android:inputType="date"
+                            android:padding="10dp"
+                            android:paddingStart="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/estBorrow">
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="12dp"
+                        android:text="EDIT IN SETTINGS*"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_conversion_absoluteHeight="24dp"
+                        tools:layout_conversion_absoluteWidth="71dp" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/contactInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/rectangle2_post_a_book_borrow_page"
+                        android:padding="12dp"
+
                         >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:text="ADDRESS: insert address insert address insert"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="12dp"
+                            android:text="CONTACT INFORMATION: 09000000000"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/pictureofBook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="380dp"
+                        android:clickable="true"
+                        android:contentDescription="Picture of Book"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/captionGroup"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="11dp"
+                            android:paddingStart="12dp"
+                            android:text="SAMPLE IMAGE"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <View
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:layout_marginLeft="12dp"
+                            android:layout_marginTop="30dp"
                             android:background="@drawable/rectangle1_post_a_book_borrow_page"
-                            tools:layout_conversion_absoluteHeight="140dp"
-                            tools:layout_conversion_absoluteWidth="140dp"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:layout_editor_absoluteX="43dp"
-                            tools:layout_editor_absoluteY="615dp" />
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <View
                             android:id="@+id/img_of_book"
@@ -430,107 +482,86 @@
                             android:layout_height="50dp"
                             android:layout_marginLeft="12dp"
                             android:background="@drawable/img_9"
-                            tools:layout_conversion_absoluteHeight="50dp"
-                            tools:layout_conversion_absoluteWidth="50dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:layout_editor_absoluteX="90dp"
-                            tools:layout_editor_absoluteY="660dp" />
+                            app:layout_constraintTop_toTopOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toEndOf="parent"
-                    android:paddingBottom="20dp"
-                    app:layout_constraintStart_toStartOf="parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/captionGroup"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="CAPTION"
-                        android:layout_marginTop="228dp"
-                        android:layout_marginLeft="150dp"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
+                        android:paddingStart="12dp"
+                        android:paddingBottom="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:layout_conversion_absoluteHeight="24dp"
-                        tools:layout_conversion_absoluteWidth="77dp"
-                        tools:layout_editor_absoluteX="245dp"
-                        tools:layout_editor_absoluteY="590dp" />
+                        app:layout_constraintStart_toEndOf="@id/pictureofBook"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="228dp"
+                            android:text="CAPTION"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
 
-                    <EditText
-                        style="@style/lineEditText"
-                        android:layout_width="180dp"
-                        android:layout_height="150dp"
-                        android:background="@drawable/rectangle1_post_a_book_borrow_page"
-                        android:layout_marginTop="410dp"
-                        android:layout_marginLeft="150dp"
-                        android:gravity="top"
-                        android:hint="Type your caption here.."
-                        android:paddingStart="10dp"
-                        android:textSize="14sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:layout_conversion_absoluteHeight="137dp"
-                        tools:layout_conversion_absoluteWidth="170dp"
-                        tools:layout_editor_absoluteX="200dp"
-                        tools:layout_editor_absoluteY="618dp" />
+                        <EditText
+                            style="@style/lineEditText"
+                            android:layout_width="180dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="410dp"
+                            android:background="@drawable/rectangle1_post_a_book_borrow_page"
+                            android:gravity="top"
+                            android:hint="Type your caption here.."
+                            android:paddingStart="10dp"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
+                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="parent"
-                android:paddingBottom="12dp"
                 android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
 
                 app:layout_constraintTop_toBottomOf="@+id/bookDetails">
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:background="@drawable/rectangle3_post_a_book_borrow_page"
                     android:text="post"
                     android:textColor="@color/white"
                     android:textSize="20sp"
-                    tools:layout_conversion_absoluteHeight="52dp"
-                    tools:layout_conversion_absoluteWidth="130dp"
-                    tools:layout_editor_absoluteX="260dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteY="810dp" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 
 
     </ScrollView>

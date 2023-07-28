@@ -85,37 +85,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.668" />
 
-    <Button
-        android:id="@+id/nextbutton1"
-        android:layout_width="158dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple_200"
-        android:onClick="nextScreen"
-        android:shadowColor="@color/black"
-        android:text="NEXT"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.731"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
-
-    <Button
-        android:id="@+id/loginbutton1"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:onClick="openLoginScreen"
-        android:shadowColor="@color/black"
-        android:text="LOGIN"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingStart="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
+        app:layout_constraintTop_toBottomOf="@id/textView4">
+
+        <Button
+            android:id="@+id/nextbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:onClick="nextScreen"
+            android:shadowColor="@color/black"
+            android:text="NEXT"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/loginbutton1"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:onClick="openLoginScreen"
+            android:shadowColor="@color/black"
+            android:text="LOGIN"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView9"

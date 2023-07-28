@@ -23,9 +23,9 @@
         >
 
 
-        <FrameLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/borrowPage"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#F6F6FF"
             app:layout_constraintEnd_toEndOf="parent"
@@ -33,11 +33,13 @@
 
             >
 
-            <FrameLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/header_borrow_page"
-                android:layout_width="411dp"
-                android:layout_height="160dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
                 android:background="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
@@ -45,30 +47,36 @@
                     android:id="@+id/logo_borrow_page"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="42dp"
-                    android:src="@drawable/logo_borrow_page">
-
-                </ImageView>
+                    android:layout_marginRight="250dp"
+                    android:src="@drawable/logo_borrow_page"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="251dp"
+                    android:layout_marginLeft="105dp"
                     android:layout_marginTop="29dp"
                     android:text="mode"
                     android:textColor="#A8A6A6"
-                    android:textSize="12sp"></TextView>
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
                 <TextView
                     android:id="@+id/borrow_text_borrow_page"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="150dp"
                     android:layout_marginTop="42dp"
                     android:text="B O R R O W"
                     android:textColor="#9E55E3"
-                    android:textSize="20dp">
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                 </TextView>
 
@@ -76,31 +84,38 @@
                     android:id="@+id/btnBorrow"
                     android:layout_width="135dp"
                     android:layout_height="48dp"
-                    android:layout_marginLeft="138dp"
                     android:layout_marginTop="75dp"
                     android:background="@drawable/gradient_rectangle"
                     android:text="L E N D  M O D E "
                     android:onClick="openLendScreen"
-                    android:textSize="15sp">
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                 </Button>
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginLeft="110dp"
+                    android:layout_marginRight="150dp"
                     android:layout_marginTop="85dp"
-                    android:src="@drawable/baseline_swap_vert_24">
+                    android:src="@drawable/baseline_swap_vert_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                 </ImageView>
 
-            </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <FrameLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/search_bar_borrow_page_group"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/header_borrow_page">
@@ -108,40 +123,28 @@
                 <EditText
                     android:id="@+id/search_bar_borrow_page"
                     style="@style/lineEditText"
-                    android:layout_width="320dp"
+                    android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:layout_marginLeft="43dp"
-                    android:layout_marginTop="15dp"
                     android:background="@drawable/search_borrow_page"
                     android:hint="Search for books..."
                     android:paddingStart="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     android:textSize="18dp">
 
                 </EditText>
 
 
 
-            </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="590dp">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/postedlendbooks"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
 
-        </FrameLayout>
-
-            <FrameLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/donate_group_borrow_page"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="43dp"
-                android:layout_marginTop="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/search_bar_borrow_page_group">
@@ -150,7 +153,10 @@
                     android:id="@+id/donate_rectangle_lend_page"
                     android:layout_width="320dp"
                     android:layout_height="141dp"
-                    android:background="@drawable/donate_rectangle">
+                    android:background="@drawable/donate_rectangle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                 </View>
 
@@ -165,6 +171,9 @@
                     android:textColor="#7A6BBC"
                     android:textStyle="bold"
                     android:clickable="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
 
                     >
                 </Button>
@@ -175,45 +184,49 @@
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/help_apal"/>
+                    android:background="@drawable/help_apal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="30dp"
-                    android:text="Touched by a
-                        Pal's story?"
+                    android:layout_marginRight="105dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Touched by a Pal's story?"
                     android:textSize="20sp"
                     android:textColor="@color/white"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     >
 
                 </TextView>
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="58dp"
-                    android:text= "                            Help
-                        them now!"
+                    android:layout_marginRight="105dp"
+                    android:layout_marginTop="75dp"
+                    android:text= "Help them now!"
                     android:textSize="16sp"
                     android:textColor="@color/white"
                     android:textStyle="bold|italic"
-                    >
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
-                </TextView>
 
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            </FrameLayout>
-
-            <FrameLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/request_book_group_borrow_page"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="43dp"
-                android:layout_marginTop="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/donate_group_borrow_page">
@@ -223,9 +236,10 @@
                     android:layout_width="320dp"
                     android:layout_height="141dp"
                     android:background="@drawable/donate_rectangle"
-                    android:backgroundTint="@color/purple_200">
-
-                </View>
+                    android:backgroundTint="@color/purple_200"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
                 <Button
                     android:id="@+id/request_book_button_borrow_page"
@@ -238,65 +252,102 @@
                     android:text="Request book"
                     android:textColor="@color/purple_200"
                     android:textStyle="bold"
-
-                    ></Button>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
 
 
                 <TextView
-                    android:layout_width="150dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="105dp"
+                    android:layout_marginTop="20dp"
                     android:text="Can't see a book you need?"
                     android:textColor="@color/white"
                     android:textSize="20dp"
-                    android:textStyle="bold">
-
-                </TextView>
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
                 <TextView
                     android:id="@+id/postnow"
-                    android:layout_width="160dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="54dp"
+                    android:layout_marginRight="105dp"
+                    android:layout_marginTop="70dp"
                     android:lineSpacingExtra="2sp"
-                    android:text="                         Post it
-now and we'll find a Pal for you!"
+                    android:text="Post it now and we'll find a Pal for you!"
                     android:textColor="@color/white"
                     android:textSize="15sp"
-                    android:textStyle="bold|italic">
-
-                </TextView>
+                    android:textStyle="bold|italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
                 <View
                     android:id="@+id/buuk"
                     android:layout_marginTop="60dp"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:layout_marginLeft="90dp"
-                    android:background="@drawable/libroww"/>
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/libroww"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
 
-            </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
-            <TextView
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/basedonYourText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/request_book_group_borrow_page">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Based on your recent borrowed books"
+                    android:textColor="@color/purple_200"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="43dp"
-                android:layout_marginTop="550dp"
-                android:text="Based on your recent borrowed books"
-                android:textColor="@color/purple_200"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@id/donate_group_lend_page">
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingStart="43dp"
+                app:layout_constraintTop_toBottomOf="@id/basedonYourText">
 
-            </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/postedlendbooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
-        </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.core.widget.NestedScrollView>

@@ -133,36 +133,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.684" />
 
-    <Button
-        android:id="@+id/backbutton2"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple_200"
-        android:shadowColor="@color/black"
-        android:text="BACK"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingStart="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
+        app:layout_constraintTop_toBottomOf="@id/textView10">
 
-    <Button
-        android:id="@+id/nextbutton3"
-        android:layout_width="158dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple_200"
-        android:onClick="nextScreen3"
-        android:shadowColor="@color/black"
-        android:text="NEXT"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.731"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
+        <Button
+            android:id="@+id/backbutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:shadowColor="@color/black"
+            android:text="BACK"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/nextbutton3"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:onClick="nextScreen3"
+            android:shadowColor="@color/black"
+            android:text="NEXT"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
