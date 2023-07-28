@@ -9,7 +9,7 @@
     android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/view"
+        android:id="@+id/chatRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="@dimen/_16sdp"
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_100sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/chatRecyclerView"
         app:layout_constraintTop_toTopOf="parent"
         android:background="#F2F2F2"
         android:textColor="@color/black">
@@ -47,6 +47,7 @@
             android:src="@drawable/img"/>
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/namePal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pal Name"

@@ -8,7 +8,7 @@ import com.example.pagepal.databinding.ActivitySignupscreen3Binding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
-class SignUpScreenActivity : AppCompatActivity() {
+class   SignUpScreenActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignupscreen3Binding
     private lateinit var firebaseAuth: FirebaseAuth
