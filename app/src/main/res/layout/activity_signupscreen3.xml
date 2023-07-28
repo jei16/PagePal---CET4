@@ -149,10 +149,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/username_txtBox_signup_group3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
         android:layout_marginTop="185dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -161,7 +162,7 @@
         <EditText
             android:id="@+id/EditTxtEmail"
             style="@style/lineEditText"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="70dp"
@@ -175,7 +176,7 @@
 
         <View
             android:id="@+id/email_txtBox_signup3"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="0dp"
             android:layout_marginTop="70dp"
@@ -190,10 +191,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/email_txtBox_signup_group3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/username_txtBox_signup_group3">
@@ -202,7 +204,7 @@
         <EditText
             android:id="@+id/EditTxtUsername"
             style="@style/lineEditText"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="0dp"
@@ -216,7 +218,7 @@
 
         <View
             android:id="@+id/emails_txtBox_signup3"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="0dp"
             android:layout_marginTop="0dp"
@@ -230,10 +232,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/password_tbox_signup_group3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -243,7 +246,7 @@
         <EditText
             android:id="@+id/EditTxtPass"
             style="@style/lineEditText"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="10dp"
             android:hint="Password"
@@ -256,7 +259,7 @@
 
         <View
             android:id="@+id/password_textbox_signup3"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginStart="0dp"
             android:alpha="0.15"
@@ -269,9 +272,10 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/confirmpassword_tbox_signup_group3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp"
@@ -280,7 +284,7 @@
         <EditText
             android:id="@+id/EditTxtCPass"
             android:layout_marginStart="10dp"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Confirm Password"
             android:textColor="@color/black"
@@ -297,7 +301,7 @@
             android:background="@drawable/signup_textbox"
             android:alpha="0.15"
             android:layout_marginStart="0dp"
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
