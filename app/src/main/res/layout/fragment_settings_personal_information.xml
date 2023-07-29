@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".getstarted"
+        tools:layout_editor_absoluteX="-98dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/headerofSettingsPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="#FFFFFF"
+                android:padding="27dp"
+                android:paddingBottom="12dp">
+
+                <View
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:clickable="true"
+                    android:contentDescription="Back button"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:background="@drawable/back_settings"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PERSONAL INFORMATION"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S E T T I N G S"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="18sp"
+                    android:textColor="#9E55E3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/editProfileinSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/headerofSettingsPersonal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingBottom="24dp"
+                android:background="#F5F5F5">
+
+                <TextView
+                    android:paddingStart="12dp"
+                    android:paddingTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_13"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/img_14"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="110dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintTop_toBottomOf="@id/editProfileinSettings"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="#B5A8DE"
+                    android:textSize="14sp"
+                    android:text="Display Name: Pal <First Name>"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fullnameSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Full Name"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:importantForAccessibility="no"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/genderSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/fullnameSettings"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Gender"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:importantForAccessibility="no"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/birthdaySettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/genderSettings"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Birthday"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:importantForAccessibility="no"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/locationAddressSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/birthdaySettings"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Location Address"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:importantForAccessibility="no"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/bioSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/locationAddressSettings"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Bio"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:importantForAccessibility="no"/>
+
+                </LinearLayout>
+
+                <Button
+                    app:layout_constraintBottom_toBottomOf="@id/locationAddressSettings"
+                    app:layout_constraintEnd_toEndOf="@id/locationAddressSettings"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="Bio Next Screen"
+                    android:backgroundTint="#A8A6A6"
+                    android:background="@drawable/baseline_navigate_next_24"/>
+
+                <Button
+                    android:layout_marginBottom="12dp"
+                    app:layout_constraintBottom_toBottomOf="@id/bioSettings"
+                    app:layout_constraintEnd_toEndOf="@id/bioSettings"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="Bio Next Screen"
+                    android:backgroundTint="#A8A6A6"
+                    android:background="@drawable/baseline_navigate_next_24"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
