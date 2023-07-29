@@ -45,9 +45,12 @@ class LendingFragment : Fragment() {
 
             lendingPageContainer?.removeAllViews()
 
+
             val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
             transaction.replace(R.id.lendingPage, LendBookFragment())
             transaction.commit()
+
+
 
         }
 

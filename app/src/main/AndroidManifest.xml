@@ -19,6 +19,9 @@
         android:theme="@style/Theme.PagePal"
         tools:targetApi="31">
         <activity
+            android:name=".DetailedInfoPosted"
+            android:exported="false" />
+        <activity
             android:name=".bookPreview"
             android:exported="false" />
         <activity
@@ -63,10 +66,20 @@
         <activity
             android:name=".splashscreen"
             android:exported="true"
-            android:theme="@style/Theme.Design.NoActionBar"></activity>
+            android:theme="@style/Theme.Design.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

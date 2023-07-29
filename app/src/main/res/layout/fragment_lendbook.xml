@@ -203,7 +203,6 @@
                                     android:layout_marginTop="455dp"
                                     android:layout_marginLeft="23dp"
                                     android:clickable="true"
-
                                     android:focusable="true" />
 
                                 <View

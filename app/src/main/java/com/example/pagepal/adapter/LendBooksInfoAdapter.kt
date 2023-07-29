@@ -1,19 +1,21 @@
-package com.example.pagepal.adapter
-
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pagepal.databinding.PostedLendBooksBinding
 import com.example.pagepal.models.LendBookData
+import com.squareup.picasso.Picasso
 import java.util.ArrayList
 
-class LendBooksInfoAdapter (private val infoList : ArrayList<LendBookData>) : RecyclerView.Adapter<LendBooksInfoAdapter.ViewHolder>() {
-    class ViewHolder(val binding : PostedLendBooksBinding) : RecyclerView.ViewHolder(binding.root) {
+class LendBooksInfoAdapter(private val infoList: ArrayList<LendBookData>, private val itemClickListener: OnItemClickListener) : RecyclerView.Adapter<LendBooksInfoAdapter.ViewHolder>() {
+    class ViewHolder(val binding: PostedLendBooksBinding) : RecyclerView.ViewHolder(binding.root)
+    {
 
     }
 
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(PostedLendBooksBinding.inflate(LayoutInflater.from(parent.context),parent,false))
+        return ViewHolder(PostedLendBooksBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun getItemCount(): Int {
@@ -27,8 +29,15 @@ class LendBooksInfoAdapter (private val infoList : ArrayList<LendBookData>) : Re
                 postedBooktitle.text = currentItem.bookname
                 postedAuthor.text = currentItem.author
                 postedCaption.text = currentItem.caption
-
+                Picasso.get().load(currentItem.imgUri).into(postedImage)
             }
         }
+        holder.binding.root.setOnClickListener {
+            itemClickListener.onItemClick(currentItem)
+        }
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(item: LendBookData)
     }
 }

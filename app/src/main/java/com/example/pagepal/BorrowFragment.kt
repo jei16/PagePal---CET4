@@ -1,5 +1,7 @@
 package com.example.pagepal
 
+import LendBooksInfoAdapter
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +12,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.pagepal.adapter.LendBooksInfoAdapter
 import com.example.pagepal.databinding.FragmentBorrowPageBinding
 import com.example.pagepal.databinding.FragmentLendbookBinding
 import com.example.pagepal.models.LendBookData
@@ -20,7 +21,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-class BorrowFragment : Fragment() {
+class BorrowFragment : Fragment(), LendBooksInfoAdapter.OnItemClickListener {
     private var _binding : FragmentBorrowPageBinding? = null
     private val binding get() = _binding!!
 
@@ -36,58 +37,76 @@ class BorrowFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-
         _binding = FragmentBorrowPageBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         binding.btnBorrow.setOnClickListener {
             val borrowPageContainer = requireActivity().findViewById<ViewGroup>(R.id.borrowPage)
-
-            // Clear the container's views to reset its state before adding the new fragment
             borrowPageContainer?.removeAllViews()
 
-            // Replace the fragment without inheriting the attributes of the replaced one
             val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
             transaction.replace(R.id.borrowPage, LendingFragment())
             transaction.commit()
         }
+
         firebaseReference = FirebaseDatabase.getInstance().getReference("Lend Books Info")
         infoList = arrayListOf()
 
+        setUpRecyclerView()
         fetchData()
+    }
 
-
-
+    private fun setUpRecyclerView() {
         binding.postedlendbooks.apply {
             setHasFixedSize(true)
             val layoutManager = GridLayoutManager(context, 2)
             binding.postedlendbooks.layoutManager = layoutManager
+            val lendAdapter = LendBooksInfoAdapter(infoList, this@BorrowFragment)
+            binding.postedlendbooks.adapter = lendAdapter
         }
-
-        return binding.root
     }
 
     private fun fetchData() {
-        firebaseReference.addValueEventListener(object : ValueEventListener{
+        firebaseReference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 infoList.clear()
-                if (snapshot.exists()){
-                    for (lendbooksinfoSnap in snapshot.children){
+                if (snapshot.exists()) {
+                    for (lendbooksinfoSnap in snapshot.children) {
                         val lendbooksinfo = lendbooksinfoSnap.getValue(LendBookData::class.java)
-                        infoList.add(lendbooksinfo!!)
-
+                        lendbooksinfo?.let { infoList.add(it) }
                     }
+                    binding.postedlendbooks.adapter?.notifyDataSetChanged()
                 }
-                val lendAdapter = LendBooksInfoAdapter(infoList)
-                binding.postedlendbooks.adapter = lendAdapter
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(context, " error : $error", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Error: $error", Toast.LENGTH_SHORT).show()
             }
-
         })
+
+        val lendAdapter = LendBooksInfoAdapter(infoList, this)
+        binding.postedlendbooks.adapter = lendAdapter
+    }
+
+    override fun onItemClick(item: LendBookData) {
+        val intent = Intent(requireContext(), DetailedInfoPosted::class.java)
+        intent.putExtra("book_name", item.bookname)
+        intent.putExtra("author", item.author)
+        intent.putExtra("pubyr", item.pubyr)
+        intent.putExtra("edition", item.edition)
+        intent.putExtra("isbn", item.isbn)
+        intent.putExtra("caption", item.caption)
+        intent.putExtra("img_uri", item.imgUri)
+        startActivity(intent)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 
