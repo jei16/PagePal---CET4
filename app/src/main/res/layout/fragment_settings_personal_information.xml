@@ -129,7 +129,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     android:textColor="#B5A8DE"
                     android:textSize="14sp"
-                    android:text="Display Name: Pal <First Name>"/>
+                    android:text="Display Name: Pal (First Name)"/>
 
                 <LinearLayout
                     android:layout_marginTop="10dp"
