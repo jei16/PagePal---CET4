@@ -95,15 +95,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView4">
 
-        <Button
-            android:id="@+id/nextbutton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple_200"
-            android:onClick="nextScreen"
-            android:shadowColor="@color/black"
-            android:text="NEXT"
-            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/loginbutton1"
@@ -114,6 +105,17 @@
             android:shadowColor="@color/black"
             android:text="LOGIN"
             android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/nextbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:onClick="nextScreen"
+            android:shadowColor="@color/black"
+            android:text="NEXT"
+            android:textColor="@color/white" />
+
 
     </LinearLayout>
 

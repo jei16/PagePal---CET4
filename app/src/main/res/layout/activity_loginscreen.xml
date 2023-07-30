@@ -141,7 +141,7 @@
                 android:layout_marginTop="0dp"
                 android:layout_width="280dp"
                 android:layout_height="60dp"
-                android:hint="Username"
+                android:hint="Email"
                 style="@style/lineEditText"
                 android:textColor="@color/black"
                 android:textSize="12sp"
@@ -232,7 +232,7 @@
 
             <TextView
                 android:id="@+id/forgot_password_text"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
@@ -245,7 +245,7 @@
 
             <TextView
                 android:id="@+id/sign_up_text"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
