@@ -1,4 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <dimen name="fab_margin">16dp</dimen>
 
+    <dimen name="grid_spacing">8dp</dimen> <!-- Adjust the spacing as needed -->
+
+
 </resources>
