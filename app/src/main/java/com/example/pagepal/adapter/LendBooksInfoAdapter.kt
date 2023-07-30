@@ -4,18 +4,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.pagepal.databinding.PostedLendBooksBinding
 import com.example.pagepal.models.LendBookData
 import com.squareup.picasso.Picasso
-import java.util.ArrayList
 
 class LendBooksInfoAdapter(private val infoList: ArrayList<LendBookData>, private val itemClickListener: OnItemClickListener) : RecyclerView.Adapter<LendBooksInfoAdapter.ViewHolder>() {
-    class ViewHolder(val binding: PostedLendBooksBinding) : RecyclerView.ViewHolder(binding.root)
-    {
-
-    }
-
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(PostedLendBooksBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+        return ViewHolder(
+            PostedLendBooksBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
     override fun getItemCount(): Int {
@@ -31,13 +30,28 @@ class LendBooksInfoAdapter(private val infoList: ArrayList<LendBookData>, privat
                 postedCaption.text = currentItem.caption
                 Picasso.get().load(currentItem.imgUri).into(postedImage)
             }
-        }
-        holder.binding.root.setOnClickListener {
-            itemClickListener.onItemClick(currentItem)
+            binding.root.setOnClickListener {
+                itemClickListener.onItemClick(currentItem, position)
+            }
         }
     }
 
     interface OnItemClickListener {
-        fun onItemClick(item: LendBookData)
+        fun onItemClick(item: LendBookData, position: Int)
+    }
+
+    class ViewHolder(val binding: PostedLendBooksBinding) : RecyclerView.ViewHolder(binding.root) {
+        init {
+            // Optionally, you can handle click events here if preferred
+        }
+    }
+
+    fun addItem(item: LendBookData) {
+        infoList.add(item)
+        notifyItemInserted(infoList.size - 1)
+    }
+    fun removeItem(position: Int) {
+        infoList.removeAt(position)
+        notifyItemRemoved(position)
     }
 }

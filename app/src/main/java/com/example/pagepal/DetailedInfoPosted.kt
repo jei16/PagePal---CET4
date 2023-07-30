@@ -1,15 +1,20 @@
 package com.example.pagepal
 
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.example.pagepal.databinding.ActivityDetailedInfoPostedBinding
 import com.squareup.picasso.Picasso
 
+
 class DetailedInfoPosted : AppCompatActivity() {
+    private lateinit var binding: ActivityDetailedInfoPostedBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detailed_info_posted)
+        binding = ActivityDetailedInfoPostedBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val bookName = intent.getStringExtra("book_name")
         val author = intent.getStringExtra("author")
@@ -20,15 +25,25 @@ class DetailedInfoPosted : AppCompatActivity() {
         val imgUri = intent.getStringExtra("img_uri")
 
         // Now you can use these values to populate the views in the layout
-        // For example, you can find TextViews and set their text values:
-        findViewById<TextView>(R.id.detailed_booktitle).text = bookName
-        findViewById<TextView>(R.id.detailed_author).text = author
-        findViewById<TextView>(R.id.detailed_edition).text = edition
-        findViewById<TextView>(R.id.detailed_pubyr).text = pubyr
-        findViewById<TextView>(R.id.detailed_isbn).text = isbn
-        findViewById<TextView>(R.id.detailed_caption).text = caption
+        // For example, you can set their text values:
+        binding.detailedBooktitle.text = bookName
+        binding.detailedAuthor.text = author
+        binding.detailedEdition.text = edition
+        binding.detailedPubyr.text = pubyr
+        binding.detailedIsbn.text = isbn
+        binding.detailedCaption.text = caption
 
         // Load the book image using Picasso or any other image loading library
-        Picasso.get().load(imgUri).into(findViewById<ImageView>(R.id.detailed_bookimg))
+        Picasso.get().load(imgUri).into(binding.detailedBookimg)
+
+
+        binding.detailedBorrow.setOnClickListener {
+            val resultIntent = Intent().apply {
+                putExtra("position", intent.getIntExtra("position", -1))
+            }
+            setResult(Activity.RESULT_OK, resultIntent)
+            finish()
+        }
+        }
     }
-}
+
