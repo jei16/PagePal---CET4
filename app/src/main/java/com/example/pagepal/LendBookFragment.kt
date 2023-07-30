@@ -103,10 +103,10 @@ class LendBookFragment : Fragment() {
 
         binding.pickedimg.setOnClickListener {
 
-//                val postabookPageContainer = requireActivity().findViewById<ViewGroup>(R.id.post_a_book_lendingPage)
-//
-//
-//                postabookPageContainer?.removeAllViews()
+                val postabookPageContainer = requireActivity().findViewById<ViewGroup>(R.id.post_a_book_lendingPage)
+
+
+                postabookPageContainer?.removeAllViews()
             val imagePickerFragment = ImagePickerPABLendPageFragment()
             // Start the fragment with a request code
             imagePickerFragment.setTargetFragment(this, IMAGE_PICKER_REQUEST_CODE)
